@@ -1,0 +1,55 @@
+<h2 class="section-title"><i class="fa fa-briefcase" aria-hidden="true"></i>Commercial projects</h2>
+<div id="works" class="grid-projects">
+  <ng-container *ngIf="load">
+    <mat-card class="grid-projects-item" *ngFor="let project of comm_projects">
+      <mat-card-header>
+        <mat-card-title>{{project.name}}
+          <a class="button-item" href="{{project.liveLink}}" target="_blank"><i class="fa fa-television"
+              aria-hidden="true"></i> LIVE</a>
+        </mat-card-title>
+        <mat-card-subtitle class="hide-for-small">{{project.tech}}</mat-card-subtitle>
+      </mat-card-header>
+
+      <img *ngIf="!project.media" mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
+      <iframe *ngIf="project.media" class="hide-for-small" width="100%" height="260px" src="https://www.youtube.com/embed/_FMlJwJveU4"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <mat-card-content>
+        <p>{{project.desc}}</p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+  <div class="h-100" *ngIf="!load">
+    <div class="spinner">
+      <img src="./assets/img/spinner.gif" />
+    </div>
+  </div>
+</div>
+
+<h2 class="section-title"><i class="fa fa-home" aria-hidden="true"></i>Pet (Home) projects</h2>
+<div id="works" class="grid-projects">
+  <ng-container *ngIf="load">
+    <mat-card class="grid-projects-item" *ngFor="let project of pet_projects">
+      <mat-card-header>
+        <mat-card-title>{{project.name}}
+          <div>
+            <a class="button-item" href="{{project.liveLink}}" target="_blank"><i class="fa fa-television"
+                aria-hidden="true"></i> LIVE</a>
+            <a class="button-item" href="{{project.codeLink}}" target="_blank"><i class="fa fa-file-code-o"
+                aria-hidden="true"></i> CODE</a>
+          </div>
+        </mat-card-title>
+        <mat-card-subtitle class="hide-for-small">{{project.tech}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
+      <mat-card-content>
+        <p>{{project.desc}}</p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+  <div class="h-100" *ngIf="!load">
+    <div class="spinner">
+      <img src="./assets/img/spinner.gif" />
+    </div>
+  </div>
+</div>

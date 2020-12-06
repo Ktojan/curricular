@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    padding: 1rem;
+    background-color: #6e3852;
+    color: white;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(110px, 170px));
+    grid-gap: 1rem;
+}
+
+.grid-menu-item {
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    outline: none;
+    background-color: #37393c;
+}
+
+.grid-menu-item.active {
+    background: #A15277;
+    color: #fff;
+}
+
+
+.nav-link {
+    font-size: 19px;
+    padding: 0.3rem;
+    color: white;
+}
+
+.fa {
+   font-size: 24px;
+   padding-right: 9px;
+}
+

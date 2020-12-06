@@ -1,0 +1,31 @@
+<div id="studies" class="content">
+  <ng-container *ngIf="load">
+      <table mat-table [dataSource]="studies">
+          <ng-container matColumnDef="years">
+              <mat-header-cell *matHeaderCellDef> Period </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.years}} </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="subject">
+              <mat-header-cell *matHeaderCellDef> Course </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.subject}} </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="place">
+              <mat-header-cell *matHeaderCellDef> Place </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.place}} </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </table>
+  </ng-container>
+
+
+  <div class="h-100" *ngIf="!load">
+    <div class="spinner">
+      <img src="./assets/img/spinner.gif" />
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,145 @@
+@import "grid.css";
+
+body {
+    padding: 3%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #545E6C;
+    background: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+a {
+    color: #6e3852;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+    a:hover {
+        text-decoration: underline;
+        color: #3c1e2c;
+    }
+
+    a:focus {
+        text-decoration: none;
+    }
+
+p {
+    line-height: 1.5;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    background-color: #eee7e7;
+    padding: 1rem;
+    border: 3px solid #6e3852;
+}
+
+.section {
+    padding: 1rem
+}
+
+.section-title {
+    margin-top: 27px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color: #6e3852;
+    position: relative;
+}
+
+    .section-title .fa {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        display: inline-block;
+        color: #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background: #6e3852;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 16px;
+        position: relative;
+        top: -2px;
+    }
+
+.grid-item .upper-row {
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.grid-item .job-title {
+    color: #3F4650;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.grid-item .time {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #97AAC3;
+}
+
+.grid-item .company {
+    margin-bottom: 10px;
+    color:#6e3852;
+    font-weight: 700;
+}
+
+.grid-item .project-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.grid-item .projects-section .item {
+    margin-bottom: 15px;
+}
+
+.mat-card-header-text {
+    width: 100%;
+}
+
+/*  RESPONSIVENESS, DEVICES */
+@media screen and (max-device-width: 819px) {
+   .hide-for-small {
+       display: none;
+   }
+    
+}
+
+@media screen and (min-device-width: 820px) {
+    .show-for-small {
+        display: none;
+    }
+}

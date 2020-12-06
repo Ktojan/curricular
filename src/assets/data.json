@@ -1,0 +1,181 @@
+{
+  "img_profile": "./assets/img/profile.jpg",
+  "name": "Andrey Karpovich",
+
+  "education": [
+    {
+      "years": "2020",
+      "subject": "Basic programming skills, best-practices",
+      "place": "Ernst & Young corporational system for staff"
+    },
+    {
+      "years": "2019",
+      "subject": "Angular, Typesript and RxJS",
+      "place": "Online platforms such as Pluralsight"
+    },
+    {
+      "years": "2019",
+      "subject": "English for IT with native",
+      "place": "DIGIS inner course"
+    },
+    {
+      "years": "2018",
+      "subject": "Angular 5/Javascript",
+      "place": "Hillel"
+    },
+    {
+      "years": "2017-18",
+      "subject": "Front-end developer",
+      "place": "Self-education via online courses"
+    },
+    {
+      "years": "2016",
+      "subject": "QA-manual basic, junior Test Engineer degree",
+      "place": "Brain Academy"
+    },
+    {
+      "years": "2004-2008",
+      "subject": "Magister in mobile networks",
+      "place": "National Academy of Telecommunications"
+    }
+  ],
+
+  "experiences": [
+    {
+      "years": "march 2020 - nov 2020",
+      "company": "The Product Engine / Ernst&Young",
+      "position": "middle Front-end Developer",
+      "description": "Document intelligence - automation of contracts and billing review with AI algoritms"
+    },
+    {
+      "years": "may 2019 - march 2020",
+      "company": "DIGIS (DO IT)",
+      "position": "middle Front-end Developer",
+      "description": "Projects: fund market analyzing and visualizing tool www.vseakcii.ru; car-rent french service on Angular https://www.parkopoly.co/."
+    },
+    {
+      "years": "oct 2018 - apr 2019",
+      "company": "OSF Global Services",
+      "position": "junior Front-end Developer",
+      "description": "Multifunctional merchant online-stores on Salesforce Commerce Cloud platform. Main project: Ubisoft store. Tools: Salesforce(demandware), native JS, jQuery, scss, gulp; Sourcetree, JIRA."
+    },
+    {
+      "years": "feb 2018 - sep 2018",
+      "company": "DataInfo (Kanosoftware)",
+      "position": "junior Front-end Developer",
+      "description": "Worked for reconstruction of document-flow app for Procuracy department. Tools: ExtJS framework, native JS, scss, AJAX, REST-api; Postman, Sourcetree."
+    },
+    {
+      "years": "nov 2016 - nov 2017",
+      "company": "Silicon Valley Development LLC",
+      "position": "QA-manual",
+      "description": "Most types of manual testing of the iOS-Android web-app for dating with 3D-view feature. Tools: JIRA for bug-tracking, Postman."
+    },
+    {
+      "years": "2009 - 2015",
+      "company": "Active rest academy",
+      "position": "Site-admin, content-manager, consultant",
+      "description": "Site-manager and online consultant on tour-programms. Tools: admin panel (PHP), Dreamweaver for html updating, some SEO-tools."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Javascript, TS",
+      "value": "87"
+    },
+    {
+      "name": "Angular 2+",
+      "value": "72"
+    },
+    {
+      "name": " jQuery",
+      "value": "58"
+    },
+    {
+      "name": "HTML5, CSS3",
+      "value": "77"
+    },
+    {
+      "name": "SCSS",
+      "value": "81"
+    },
+    {
+      "name": "XHR, AJAX",
+      "value": "70"
+    },
+    {
+      "name": "Git, SourceTree",
+      "value": "63"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Document Intelligence (E&Y)",
+      "tech": "Angular9, SCSS, yarn, Jasmine;  ng-grid, pdf-viewer, axios",
+      "media": "https://www.youtube.com/embed/_FMlJwJveU4",
+      "liveLink": "https://www.ey.com/en_gl/alliances/how-ai-is-reshaping-the-document-review-and-processing-landscape",
+      "desc": "Document intelligence - automation of contracts and billing review with AI algoritms and machine learning."
+    },
+    {
+      "name": "Parkopoly",
+      "tech": "AngularJS, Angular5, SCSS, gulp",
+      "img": "./assets/img/parkopoly0.png",
+      "liveLink": "https://www.parkopoly.co/en/home-en/",
+      "desc": "Car rent-transfer-care service in France (3 separate apps for: customers, drivers and managers, desktop and mobile). More than 2500 missions each month"
+    },
+    {
+      "name": "Market analyzer Vseakcii.ru",
+      "liveLink": "https://vseakcii.ru",
+      "desc": "Fund market analityc service with a lot of integrated features like flexible and precise filtering, huge estimating tools, live-time trading charts",
+      "tech": "VueJS, jQuery, SCSS; datatables.js, chart.js, TradingView widget",
+      "img": "./assets/img/vseakcii.png"
+    },
+    {
+      "name": "Ubisoft store (games and stuff)",
+      "liveLink": "https://store.ubi.com/ie/home",
+      "desc": "I was involved in improvement, refactoring and debugging of eu- and usa-stores ",
+      "tech": "Salesforce platform (demandware), jQuery, SCSS, yarn",
+      "img": "./assets/img/ubisoft.png"
+    },
+    {
+      "name": "Journal with dated notes",
+      "tech": "Angular 7, Material 7",
+      "img": "./assets/img/material_project.png",
+      "liveLink": "https://ktojan.github.io/Angular-Material_plus_Firebase",
+      "codeLink": "https://github.com/Ktojan/Angular-Material_plus_Firebase",
+      "desc": "It's a simple app with short contact-list where you can look through contacts info and also notes (Material Table with filtering, sorting, pagination), add new ones."
+    },
+    {
+      "name": "Angular + Firebase ",
+      "tech": "Angular 5",
+      "img": "./assets/img/firebase.png",
+      "liveLink": "https://firemen-jan18.firebaseapp.com/",
+      "codeLink": "https://github.com/Ktojan/firemen-jan18",
+      "desc": "Small CRUD application, which demonstrates how an Angular app interacts with Firebase Realtime Database TECH: Angular  Small CRUD application, which demonstrates how an Angular app interacts with Firebase Realtime Database TECH: Angular."
+    },
+    {
+      "name": "Four in a row game",
+      "tech": "JS (OOP)",
+      "img": "./assets/img/for_in_row.png",
+      "liveLink": "https://ktojan.github.io/four_in_row_pure_js/index.html",
+      "codeLink": "https://github.com/Ktojan/four_in_row_pure_js",
+      "desc": "Simple game for 2 players 'For in a row' written on pure JS with a help of teamtreehouse course"
+    },
+    {
+      "name": "Hockey 1-player game on JS",
+      "tech": "JS (OOP)",
+      "img": "./assets/img/HockeyJS.png",
+      "liveLink": "https://ktojan.github.io/hockey_js/",
+      "codeLink": "https://github.com/Ktojan/hockey_js",
+      "desc": "2D-game resolved on JS with active classes-inheritance; for displaying used HTML tag 'canvas'"
+    },
+    {
+      "name": "ZIP-codes analyzer",
+      "tech": "JS (FP)",
+      "img": "./assets/img/zipcodes.png",
+      "liveLink": "http://plnkr.co/edit/M8MpN12KMPXj9H6w6R76?p=preview",
+      "codeLink": "http://plnkr.co/edit/M8MpN12KMPXj9H6w6R76?p=preview",
+      "desc": "Small feature on pure JS. Was used function-constructor, XHR for external API request, JS-manipulations with DOM."
+    }
+  ]
+}

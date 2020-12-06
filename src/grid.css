@@ -1,0 +1,16 @@
+
+/* is imported to styles.css */
+
+.grid {
+    display: grid;
+    grid-template-columns: auto minmax(17%, 21%);
+}
+
+.grid-item {
+    background: #fff;
+}
+
+.grid-content {
+    display: grid;
+}
+
