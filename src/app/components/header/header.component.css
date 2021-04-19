@@ -1,7 +1,7 @@
 header {
     display: flex;
     padding: 1rem;
-    background-color: #6e3852;
+    background-color: var(--main-color);
     color: white;
 }
 
@@ -17,11 +17,11 @@ header {
     border: 1px solid #ddd;
     padding: 0.5rem 1rem;
     outline: none;
-    background-color: #37393c;
+    background-color: var(--main-gray-color);
 }
 
 .grid-menu-item.active {
-    background: #A15277;
+    background: var(--auxiliary-main-color);
     color: #fff;
 }
 

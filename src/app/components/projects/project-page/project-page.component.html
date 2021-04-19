@@ -1,0 +1,37 @@
+<!-- <mat-card class="grid-projects-item">
+  <mat-card-header>
+    <mat-card-title>{{project.name}}
+      <a class="button-item" href="{{project.liveLink}}" target="_blank"><i class="fa fa-television"
+          aria-hidden="true"></i> LIVE</a>
+    </mat-card-title>
+    <mat-card-subtitle class="hide-for-small">{{project.tech}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img *ngIf="!project.media" mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
+  <iframe *ngIf="project.media" class="hide-for-small" width="100%" height="260px" [src]="project.embLink"
+    frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  <mat-card-content>
+    <p>{{project.desc}}</p>
+  </mat-card-content>
+</mat-card> -->
+
+<div class="project-page">
+  <article>
+    <h1>{{project.name}}</h1>
+    <img mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
+    <hr>
+    <iframe *ngIf="project.media" class="hide-for-small" width="100%" height="260px" [src]="project.embLink"
+    frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>  </article>
+  <aside>
+    <ul>Links:
+      <li><a [href]="project.liveLink">Project site</a></li>
+      <li><a [href]="project.liveLink">Some other</a></li>
+    </ul>
+    <ul>Tech stack:
+      <li *ngFor="let tech of project.tech.split(' ')">{{tech}}</li>
+    </ul>
+  </aside>
+</div>
+<footer>{{project.tech}}</footer>

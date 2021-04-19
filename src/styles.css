@@ -1,5 +1,15 @@
 @import "grid.css";
 
+* {
+    box-sizing: border-box; 
+  }
+
+:root {
+  --main-color: #6e3852;
+  --auxiliary-main-color: #A15277;
+  --main-gray-color: #37393c;
+}
+
 body {
     padding: 3%;
     font-size: 14px;
@@ -19,23 +29,6 @@ h6 {
     font-weight: 700;
 }
 
-a {
-    color: #6e3852;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-}
-
-    a:hover {
-        text-decoration: underline;
-        color: #3c1e2c;
-    }
-
-    a:focus {
-        text-decoration: none;
-    }
-
 p {
     line-height: 1.5;
 }
@@ -50,7 +43,7 @@ p {
 .content {
     background-color: #eee7e7;
     padding: 1rem;
-    border: 3px solid #6e3852;
+    border: 3px solid var(--main-color);
 }
 
 .section {
@@ -63,7 +56,7 @@ p {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
-    color: #6e3852;
+    color: var(--main-color);
     position: relative;
 }
 
@@ -81,7 +74,7 @@ p {
         -moz-background-clip: padding;
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
-        background: #6e3852;
+        background: var(--main-color);
         text-align: center;
         padding-top: 8px;
         font-size: 16px;
@@ -111,7 +104,7 @@ p {
 
 .grid-item .company {
     margin-bottom: 10px;
-    color:#6e3852;
+    color:var(--main-color);
     font-weight: 700;
 }
 
@@ -130,15 +123,15 @@ p {
     width: 100%;
 }
 
-/*  RESPONSIVENESS, DEVICES */
-@media screen and (max-device-width: 819px) {
-   .hide-for-small {
+/*  RESPONSIVENESS, DEVICES  made small = small & medium */
+@media screen and (max-device-width: 959px) {
+   .hide-for-small {  
        display: none;
    }
     
 }
 
-@media screen and (min-device-width: 820px) {
+@media screen and (min-device-width: 960px) {
     .show-for-small {
         display: none;
     }

@@ -22,7 +22,7 @@
     padding-top: 9px;
     font-weight: bold;
     vertical-align: middle;
-    background-color: #6e3852;
+    background-color: var(--main-color);
     color: white;
     font-weight: bold;
 }

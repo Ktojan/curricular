@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Education } from '../../models/education';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -8,21 +9,20 @@ import { DataService } from '../../services/data.service';
 })
 export class StudiesComponent implements OnInit {
 
-  public studies: any[];
+  public studies: Education[] = [];
   public displayedColumns: string[] = ['years', 'subject', 'place'];
-  public load = false;
+  public loaded = false;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.url = DataService.DATA;
-    this.dataService.responseType = DataService.JSON;
-    this.dataService.getData().subscribe(data => {
-      this.studies = data["education"];
-      this.load =true;
+    this.dataService.getSection("education").subscribe(data => {
+      this.studies = data;
+      this.loaded =true;
     }, error => {
       console.log(error);
-      this.load =true;
+      this.loaded =true;
     });
 
   }

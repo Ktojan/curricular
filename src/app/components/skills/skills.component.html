@@ -1,15 +1,15 @@
 <div id="skills" class="content">
-  <ng-container *ngIf="load">
+  <ng-container *ngIf="loaded">
     <ng-container *ngFor="let skill of skills">
-      <div class="progress" [ngClass]="skill.class_color.color">
-        <div class="progress-bar progress-bar-striped active" [ngClass]="skill.class_color.class_progress" [ngStyle]="{'width.%': skill.value}">
+      <div class="progress" [ngClass]="skill.classcolor.color">
+        <div class="progress-bar progress-bar-striped active" [ngClass]="skill.classcolor.class_progress" [ngStyle]="{'width.%': skill.value}">
           <div class="progress-value">{{skill.name+' ('+skill.value+'%)'}}</div>
         </div>
       </div>
     </ng-container>
   </ng-container>
 
-  <div class="h-100" *ngIf="!load">
+  <div class="h-100" *ngIf="!loaded">
     <div class="spinner">
       <img src="./assets/img/spinner.gif" />
     </div>

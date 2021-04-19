@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { Skill } from '../../models/skill';
 import { DataService } from '../../services/data.service';
+
+interface SkillColored extends Skill {
+  classcolor: {
+    color: string,
+    class_progress: string
+  };
+}
 
 @Component({
   selector: 'app-skills',
@@ -8,44 +16,43 @@ import { DataService } from '../../services/data.service';
 })
 export class SkillsComponent implements OnInit {
 
-  public skills: any[];
-  public load = false;
+  public skills: SkillColored[] = [];
+  public loaded = false;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
     this.dataService.url = DataService.DATA;
-    this.dataService.responseType = DataService.JSON;
-    this.dataService.getData().subscribe(data => {
-      this.skills = data["skills"];
+    this.dataService.getSection('skills').subscribe(data => {
+      this.skills = data;
 
       for (let skill of this.skills) {
-        skill.class_color = this.chooseColor(skill);
+        skill['classcolor'] = this.chooseColor(skill);
       }
-      this.load = true;
+      this.loaded = true;
     }, error => {
       console.log(error);
-      this.load = true;
+      this.loaded = true;
     });
   }
 
-  chooseColor(skill: any) {
+  chooseColor(skill: SkillColored) {
 
-    let class_color = { "color": '', "class_progress": '' };
+    let classcolor = { "color": '', "class_progress": '' };
     if (skill.value >= 80 && skill.value <= 100) {
-      class_color.color = "green";
-      class_color.class_progress = "bg-success";
+      classcolor.color = "green";
+      classcolor.class_progress = "bg-success";
     } else if (skill.value >= 60 && skill.value < 80) {
-      class_color.color = "blue";
-      class_color.class_progress = "bg-info";
+      classcolor.color = "blue";
+      classcolor.class_progress = "bg-info";
     } else if (skill.value >= 40 && skill.value < 60) {
-      class_color.color = "yellow";
-      class_color.class_progress = "bg-warning";
+      classcolor.color = "yellow";
+      classcolor.class_progress = "bg-warning";
     } else {
-      class_color.color = "red";
-      class_color.class_progress = "bg-danger";
+      classcolor.color = "red";
+      classcolor.class_progress = "bg-danger";
     }
 
-    return class_color;
+    return classcolor;
   }
 }

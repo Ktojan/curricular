@@ -1,6 +1,12 @@
 {
-  "img_profile": "./assets/img/profile.jpg",
-  "name": "Andrey Karpovich",
+  "profile": {
+    "img_profile": "./assets/img/profile.jpg",
+    "name": "Andrey Karpovich",
+    "born_year": "1986",
+    "born_city": "Odessa",
+    "current_city": "Kiev",
+    "phone_number": "063-72-16-651"
+  },
 
   "education": [
     {
@@ -24,7 +30,7 @@
       "place": "Hillel"
     },
     {
-      "years": "2017-18",
+      "years": "2017-2020",
       "subject": "Front-end developer",
       "place": "Self-education via online courses"
     },
@@ -42,20 +48,30 @@
 
   "experiences": [
     {
+      "years": "dec 2020 - present",
+      "company": "DAXX (Grid Dynamics)",
+      "companySite": "https://www.daxx.com/",
+      "position": "middle Front-end Developer",
+      "description": "Daxx is a Netherlands-based software development and technology consulting company with nearly 20 years of experience and over 450 experts on board."
+    },
+    {
       "years": "march 2020 - nov 2020",
       "company": "The Product Engine / Ernst&Young",
+      "companySite": "https://productengine.io/",
       "position": "middle Front-end Developer",
       "description": "Document intelligence - automation of contracts and billing review with AI algoritms"
     },
     {
       "years": "may 2019 - march 2020",
       "company": "DIGIS (DO IT)",
+      "companySite": "https://digiscorp.com/",
       "position": "middle Front-end Developer",
       "description": "Projects: fund market analyzing and visualizing tool www.vseakcii.ru; car-rent french service on Angular https://www.parkopoly.co/."
     },
     {
       "years": "oct 2018 - apr 2019",
       "company": "OSF Global Services",
+      "companySite": "https://osf.digital/",
       "position": "junior Front-end Developer",
       "description": "Multifunctional merchant online-stores on Salesforce Commerce Cloud platform. Main project: Ubisoft store. Tools: Salesforce(demandware), native JS, jQuery, scss, gulp; Sourcetree, JIRA."
     },
@@ -80,58 +96,93 @@
   ],
   "skills": [
     {
-      "name": "Javascript, TS",
-      "value": "87"
+      "name": "Javascript, Typescript",
+      "value": "89"
     },
     {
-      "name": "Angular 2+",
+      "name": "Angular 2..11",
       "value": "72"
-    },
+    },   
     {
-      "name": " jQuery",
-      "value": "58"
+      "name": "HTML5, CSS3, DOM-api",
+      "value": "81"
     },
+   
     {
-      "name": "HTML5, CSS3",
-      "value": "77"
+      "name": "rxjs, Reactive programming",
+      "value": "69"
+    },
+    
+    {
+      "name": "State Management (ngxs)",
+      "value": "55"
     },
     {
       "name": "SCSS",
       "value": "81"
     },
     {
+      "name": "fxLayout, css-grid",
+      "value": "75"
+    },
+    {
       "name": "XHR, AJAX",
       "value": "70"
     },
     {
-      "name": "Git, SourceTree",
-      "value": "63"
+      "name": " jQuery",
+      "value": "58"
+    },
+    {
+      "name": " Agile (Scrum), JIRA",
+      "value": "99"
+    },
+    {
+      "name": "Git, CI/CD",
+      "value": "79"
+    },
+    {
+      "name": "spoken English",
+      "value": "90"
     }
   ],
   "projects": [
     {
-      "name": "Document Intelligence (E&Y)",
+      "name": "Pacta Cloud (BlockAxs)",
+      "commercial": true,
+      "tech": "Angular 11, Angular Material 11 (elements with customization), rxjs, i18n, sweetalert;  fxLayout, scss, styles-theming",
+      "img": "./assets/img/pacta1.PNG",
+      "liveLink": "https://contraxs.app/",
+      "desc": "Pacta (BlockAxs) automates the creation, editing, negotiation, signature and management of your contracts. Our document generators are built on your contract texts and a set of questions that you can define. Based on the answers to these questions, an individualized (incl. gendering), perfectly formatted draft contract is automatically created. In this way, you will be able to create your documents in a matter of minutes in the future. Also have various contract data clearly summarized or tabulated. "
+    },
+    {
+      "name": "Document Intelligence",
+      "commercial": true,
       "tech": "Angular9, SCSS, yarn, Jasmine;  ng-grid, pdf-viewer, axios",
       "media": "https://www.youtube.com/embed/_FMlJwJveU4",
       "liveLink": "https://www.ey.com/en_gl/alliances/how-ai-is-reshaping-the-document-review-and-processing-landscape",
-      "desc": "Document intelligence - automation of contracts and billing review with AI algoritms and machine learning."
+      "desc": "Document intelligence (E&Y project) - automation of contracts and billing review with AI algoritms and machine learning."
     },
     {
       "name": "Parkopoly",
-      "tech": "AngularJS, Angular5, SCSS, gulp",
+      "commercial": true,
+      "tech": "Angular5, AngularJS, SCSS, gulp, google-maps-api, calendar-feature",
       "img": "./assets/img/parkopoly0.png",
       "liveLink": "https://www.parkopoly.co/en/home-en/",
       "desc": "Car rent-transfer-care service in France (3 separate apps for: customers, drivers and managers, desktop and mobile). More than 2500 missions each month"
     },
     {
-      "name": "Market analyzer Vseakcii.ru",
+      "name": "Vseakcii.ru",
+      "commercial": true,
       "liveLink": "https://vseakcii.ru",
       "desc": "Fund market analityc service with a lot of integrated features like flexible and precise filtering, huge estimating tools, live-time trading charts",
       "tech": "VueJS, jQuery, SCSS; datatables.js, chart.js, TradingView widget",
+      "media": "https://vseakcii.ru/video/emitents.mp4",
       "img": "./assets/img/vseakcii.png"
     },
     {
-      "name": "Ubisoft store (games and stuff)",
+      "name": "Ubisoft store",
+      "commercial": true,
       "liveLink": "https://store.ubi.com/ie/home",
       "desc": "I was involved in improvement, refactoring and debugging of eu- and usa-stores ",
       "tech": "Salesforce platform (demandware), jQuery, SCSS, yarn",
@@ -146,7 +197,7 @@
       "desc": "It's a simple app with short contact-list where you can look through contacts info and also notes (Material Table with filtering, sorting, pagination), add new ones."
     },
     {
-      "name": "Angular + Firebase ",
+      "name": "Angular plus Firebase ",
       "tech": "Angular 5",
       "img": "./assets/img/firebase.png",
       "liveLink": "https://firemen-jan18.firebaseapp.com/",
@@ -162,7 +213,7 @@
       "desc": "Simple game for 2 players 'For in a row' written on pure JS with a help of teamtreehouse course"
     },
     {
-      "name": "Hockey 1-player game on JS",
+      "name": "Hockey game on JS",
       "tech": "JS (OOP)",
       "img": "./assets/img/HockeyJS.png",
       "liveLink": "https://ktojan.github.io/hockey_js/",

@@ -1,6 +1,6 @@
 .sidebar-wrapper {
     height: 100%;
-    background: #A15277;
+    background:var(--auxiliary-main-color);
     color: #fff;
 }
 

@@ -1,0 +1,24 @@
+
+.project-page {
+  display: flex;
+  flex: 1;
+}
+.project-page > article {
+  flex: 1;
+  padding: 2rem;
+}
+.project-page > nav, 
+.project-page > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+.project-page > nav {
+  order: -1;
+}
+footer {
+  background: yellowgreen;
+  height: 20vh;
+}
+footer, article, nav, aside {
+  padding: 1em;
+}

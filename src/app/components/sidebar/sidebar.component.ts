@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Profile } from '../../models/profile';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -8,18 +9,20 @@ import { DataService } from '../../services/data.service';
 })
 export class SidebarComponent implements OnInit {
 
-  public img_profile: string;
-  public name: string;
+  public profile: Profile = {
+    born_city: "",
+    born_year: 0,
+    current_city: "",
+    img_profile: "",
+    name: "",
+    phone_number: ""
+  };
 
   constructor(private dataService:DataService) { }
 
   ngOnInit() {
     this.dataService.url = DataService.DATA;
-    this.dataService.responseType = DataService.JSON;
-    this.dataService.getData().subscribe(data =>{
-      this.img_profile = data["img_profile"];
-      this.name = data["name"];
-    });
+    this.dataService.getSection('profile').subscribe((data: Profile) => this.profile = data);
   }
 
 }

@@ -1,5 +1,5 @@
 <div id="studies" class="content">
-  <ng-container *ngIf="load">
+  <ng-container *ngIf="loaded">
       <table mat-table [dataSource]="studies">
           <ng-container matColumnDef="years">
               <mat-header-cell *matHeaderCellDef> Period </mat-header-cell>
@@ -22,7 +22,7 @@
   </ng-container>
 
 
-  <div class="h-100" *ngIf="!load">
+  <div class="h-100" *ngIf="!loaded">
     <div class="spinner">
       <img src="./assets/img/spinner.gif" />
     </div>

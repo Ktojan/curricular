@@ -3,15 +3,15 @@
     <section class="section summary-section">
         <h2 class="section-title"><i class="fa fa-male" aria-hidden="true"></i>Personal info</h2>
         <p>
-            Was born in 1986 in Odessa, from 2020 live in Kiev. I have a balanced character, realistic worldview, creative approach to life. Stick to stoicism.
+            Was born in {{profile.born_year}} in {{profile.born_city}}, from 2020 live in {{profile.current_city}}. I have a balanced character, realistic worldview, creative approach to life. Stick to stoicism.
         </p>
-
+       
         <div class=" show-for-small">
             <h2 class="section-title"><i class="fa fa-male" aria-hidden="true"></i>Karpovich Andrey</h2>
             <h3 class="tagline">Frontend developer</h3>
             <ul class="list-unstyled">
                 <li class="email"><i class="fa fa-envelope"></i><a href="mailto: karpovich.andrey@gmail.com"> karpovich.andrey@gmail.com</a></li>
-                <li class="phone"><i class="fa fa-phone"></i><a href="tel:063-72-16-651"> 063-72-16-651</a></li>
+                <li class="phone"><i class="fa fa-phone"></i><a [href]="profile.phone_number"> {{profile.phone_number}}</a></li>
                 <li class="linkedin"><i class="fa fa-skype"></i> andrey-traveller</li>
                 <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/andrey-karpovich-345701131" target="_blank"> LinkedIn</a></li>
                 <li class="github"><i class="fa fa-github"></i><a href="https://github.com/Ktojan" target="_blank"> github.com/Ktojan</a></li>
@@ -21,7 +21,7 @@
             <h2 class="section-title"><i class="fa fa-user"></i>Actual job expectations</h2>
             <div class="summary">
                 <p>
-                    I'm looking for involvement as front-end developer in sapid huge projects with modern
+                    I'm looking for involv.ement as front-end developer in sapid huge projects with modern
                     tools (e.g. Angular 8). Programming is more prefferable for me than a markup or design, project area and basic ideas are important too.
                     Social activities and live collaboration as well as joint leisure with colleagues are valuable for me.
                 </p>
@@ -48,7 +48,18 @@
                     This curriculum vitae SPA-app was created via Angular7 with elements of Angular Material. The
                     goal is to reveal to the world how brilliant I am in both Angular and front-end in general.
                     You can explore the code <a href="https://github.com/Ktojan/curricular" target="_blank">on Github</a>.
-                </p>
+                                </p>
+                <p>The interface is about to be updated, aswell as Angular version (from 7 to 11).</p>
+                
+                    <!-- <ul><b>Features, used in the project:</b> 
+                        <li>CSS-variables</li>
+                        <li>Route guard <a [routerLink]="['/projects']">(canActivate)</a></li>
+                        <li>Shadow DOW </li>
+                    </ul>
+
+                    <popup-info data-text="Your card validation code (CVC) is an extra
+                    security feature — it is the last 3 or 4
+                    numbers on the back of your card."></popup-info> -->
             </div>
 </section>
 </div>

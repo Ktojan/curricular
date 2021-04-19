@@ -1,5 +1,5 @@
 <div id="experience" class="content">
-    <ng-container *ngIf="load">
+    <ng-container *ngIf="loaded">
         <section class="section experiences-section" >
             <div class="item" *ngFor="let row of experiences">
                 <div class="meta">
@@ -7,7 +7,9 @@
                         <h3 class="job-title">{{row.position}}</h3>
                         <div class="time">{{row.years}}</div>
                     </div><!--//upper-row-->
-                    <div class="company">{{row.company}}</div>
+                    <div class="company">{{row.company}}&nbsp;
+                        <a *ngIf="row.companySite" [href]="row.companySite" target="_blank">(company site)</a>
+                    </div>
                 </div><!--//meta-->
                 <div class="details">
                     <p>{{row.description}}</p>
@@ -17,7 +19,7 @@
         </section><!--//section-->
     </ng-container>
 
-    <div class="h-100" *ngIf="!load">
+    <div class="h-100" *ngIf="!loaded">
         <div class="spinner">
             <img src="./assets/img/spinner.gif" />
         </div>
