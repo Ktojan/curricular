@@ -4,7 +4,7 @@ Angular 7 elements and features: data bindings, routing, observables, service wi
 Separate json file for core static content (imitation of server).
 Material elements: mat-table, mat-card, material-icons, mat-buttons.
 
-You can browse the project here: https://ktojan.github.io/Curriculum-via-Angular/about 
+You can browse the project here: https://ktojan.github.io/curricular  
 
 # Development server
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
