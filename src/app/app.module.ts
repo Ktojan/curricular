@@ -16,15 +16,13 @@ import { StudiesComponent } from './components/studies/studies.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { DataService } from './services/data.service'
 
-import {
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatTableModule,
-    MatTabsModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTableModule } from '@angular/material/table';
+import { MatTabsModule } from '@angular/material/tabs';
 import { CdkTableModule } from '@angular/cdk/table';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { AppRoutingModule } from './app-routing.module';
