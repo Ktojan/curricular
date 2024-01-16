@@ -10,14 +10,24 @@
 
   "education": [
     {
+      "years": "2021",
+      "subject": "Angular Advanced",
+      "place": "Cbsystematics Development"
+    },
+    {
+      "years": "2020",
+      "subject": "Typesript advanced",
+      "place": "Hillel IT School"
+    },
+    {
       "years": "2020",
       "subject": "Basic programming skills, best-practices",
       "place": "Ernst & Young corporational system for staff"
     },
     {
       "years": "2019",
-      "subject": "Angular, Typesript and RxJS",
-      "place": "Online platforms such as Pluralsight"
+      "subject": "HTML5, CSS3 + SCSS in depth",
+      "place": "Cbsystematics Development"
     },
     {
       "years": "2019",
@@ -27,12 +37,12 @@
     {
       "years": "2018",
       "subject": "Angular 5/Javascript",
-      "place": "Hillel"
+      "place": "Hillel IT School"
     },
     {
-      "years": "2017-2020",
+      "years": "2017 .. present",
       "subject": "Front-end developer",
-      "place": "Self-education via online courses"
+      "place": "Self-education via online courses such as Pluralsight, Freecodecamp"
     },
     {
       "years": "2016",
@@ -41,14 +51,28 @@
     },
     {
       "years": "2004-2008",
-      "subject": "Magister in mobile networks",
+      "subject": "Magister (Bachelor+) in mobile networks",
       "place": "National Academy of Telecommunications"
     }
   ],
 
   "experiences": [
     {
-      "years": "dec 2020 - present",
+      "years": "febr 2022 - dec 2023",
+      "company": "Ukrainian Armed Forces",
+      "companySite": "",
+      "position": "leutenant",
+      "description": "Absolutely non-relevant experience, sadly."
+    },
+    {
+      "years": "oct 2021 - febr 2022",
+      "company": "ROZETKA",
+      "companySite": "https://rozetka.com.ua/",
+      "position": "strong-middle Front-end Developer",
+      "description": "It's a 'Ukrainian Amazon', the largest online store. "
+    },
+    {
+      "years": "dec 2020 - oct 2021",
       "company": "DAXX (Grid Dynamics)",
       "companySite": "https://www.daxx.com/",
       "position": "middle Front-end Developer",

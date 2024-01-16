@@ -9,6 +9,6 @@ export class ProjectAccessGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    return prompt(`Could Russell's teapot being found flying in Solar system?`, '') === 'could';
+    return prompt(`How many oceans are there on the Earth?`, '') === '5';
   }
 }
