@@ -69,28 +69,34 @@
       "company": "ROZETKA",
       "companySite": "https://rozetka.com.ua/",
       "position": "strong-middle Front-end Developer",
-      "description": "It's a 'Ukrainian Amazon', the largest online store. "
+      "description": "It's a 'Ukrainian Amazon', the largest online store. ",
+      "achievs": ["In a few weeks started implementing tasks on the hardest part of frontend: widely reusable common (library) components.", 
+        "Implemented from scratch all functions for the new image-slider component that was soon published"]
     },
     {
       "years": "dec 2020 - oct 2021",
       "company": "DAXX (Grid Dynamics)",
       "companySite": "https://www.daxx.com/",
       "position": "middle Front-end Developer",
-      "description": "Daxx is a Netherlands-based software development and technology consulting company with nearly 20 years of experience and over 450 experts on board."
+      "description": "Daxx is a Netherlands-based software development and technology consulting company with nearly 20 years of experience and over 450 experts on board.",
+      "achievs": ["Have been communicating directly with product owner and left him satisfied with both understanding of the project and code implementation",
+      "Was the main frontend dev on the project and provided some help and supervision for junior-colleague"]
     },
     {
       "years": "march 2020 - nov 2020",
       "company": "The Product Engine / Ernst&Young",
       "companySite": "https://productengine.io/",
       "position": "middle Front-end Developer",
-      "description": "Document intelligence - automation of contracts and billing review with AI algoritms"
+      "description": "Document intelligence - automation of contracts and billing review with AI algoritms",
+      "achievs": ["Implemented new feature adapting the Angular 'ngTemplateOutletContext' property to the project's needs (it's not actual project's code, just demo example)", "../../../assets/img/daxx_achiev.png", "../../../assets/img/daxx_achiev_2.png"]
     },
     {
       "years": "may 2019 - march 2020",
       "company": "DIGIS (DO IT)",
       "companySite": "https://digiscorp.com/",
       "position": "middle Front-end Developer",
-      "description": "Projects: fund market analyzing and visualizing tool www.vseakcii.ru; car-rent french service on Angular https://www.parkopoly.co/."
+      "description": "Projects: fund market analyzing and visualizing tool www.vseakcii.ru; car-rent french service on Angular https://www.parkopoly.co/.",
+      "achievs": ["Was involved in one old project on AngularJS. In 2 weeks got acknowledged with it from zero and succeed in further project support and expanding (but don't want to repeat)"]
     },
     {
       "years": "oct 2018 - apr 2019",

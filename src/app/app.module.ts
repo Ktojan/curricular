@@ -23,8 +23,9 @@ import {
     MatIconModule,
     MatSidenavModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
 } from '@angular/material';
+import {MatRadioModule} from '@angular/material/radio';
 import { CdkTableModule } from '@angular/cdk/table';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -56,6 +57,7 @@ import { ProjectPageComponent } from './components/projects/project-page/project
     MatSidenavModule,
     MatTableModule,
     MatTabsModule,
+    MatRadioModule,
     CdkTableModule,
   ],
   providers: [

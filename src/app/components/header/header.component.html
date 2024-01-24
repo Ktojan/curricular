@@ -1,32 +1,9 @@
 <header id="navbar" class="grid-item">
     <section class="grid-menu">
-        <div *ngFor="let item of navigationLinks" class="grid-menu-item "
+        <nav *ngFor="let item of navigationLinks" class="grid-menu-item "
          [routerLink]="[item.link]" routerLinkActive="active">
             <a class="nav-link"><i [class]="item.icon" aria-hidden="true"></i>{{item.label}}</a>
-        </div>        
-        <!-- <div class="grid-menu-item"  [routerLink]="['skills']" routerLinkActive="active">
-            <a class="nav-link"><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>Skills</a>
-        </div>
-        <div class="grid-menu-item" [routerLink]="['education']" routerLinkActive="active">
-            <a class="nav-link"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</a>
-        </div>
-        <div class="grid-menu-item" [routerLink]="['experience']" routerLinkActive="active">
-            <a class="nav-link"><i class="fa fa-check-square-o" aria-hidden="true"></i>Experience</a>
-        </div>
-        <div class="grid-menu-item" [routerLink]="['projects']" routerLinkActive="active">
-            <a class="nav-link"><i class="fa fa-cubes" aria-hidden="true"></i>Projects</a>
-        </div> -->
+        </nav> 
     </section>
 </header>
-
-<!-- <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="#">Title</a>
-      <ul class="nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
-    </div>
-  </div> -->
  
