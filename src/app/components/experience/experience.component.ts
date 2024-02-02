@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {  Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
 import { Experience } from '../../models/experience';
 
@@ -19,7 +19,7 @@ import { Experience } from '../../models/experience';
         padding-right: 4px;
       }     
     `
-  ]
+  ],
 })
 export class ExperienceComponent implements OnInit {
   experiences: Experience[] = [];
@@ -35,4 +35,5 @@ export class ExperienceComponent implements OnInit {
       this.loaded = true;
     });
   }
+
 }

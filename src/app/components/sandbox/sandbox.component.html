@@ -1,0 +1,20 @@
+<div id="sandbox" class="grid-projects">
+  <ng-container *ngIf="loaded">
+    <h3>Try this page while changing the window size in devtools</h3>
+
+    <app-fxflex></app-fxflex>
+
+    <app-animations></app-animations>
+
+    <shared-card [title]="'CSS align items'" (showHtml)="toggleHtml($event, 'cssalign')">
+      let's play with alignment
+      <p>yeah</p>
+    </shared-card>
+
+  </ng-container>
+  <div class="h-100" *ngIf="!loaded">
+    <div class="spinner">
+      <img src="./assets/img/spinner.gif" />
+    </div>
+  </div>
+</div>

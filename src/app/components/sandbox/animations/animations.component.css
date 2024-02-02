@@ -1,0 +1,47 @@
+.app-fieldset {
+  width: 100%;
+}
+
+.app-fieldset button {
+  margin-right: 1%;
+  background-color: ivory;
+  cursor: pointer
+}
+
+#remove-last {
+  background-color: yellow;
+}
+
+#reset {
+  background-color: firebrick;
+}
+
+#water {
+  background-color: lightblue;
+  margin-left: 4%
+}
+
+.park-back {
+  display: flex;
+  width: 100%;
+  height: 128px;
+  margin-top: 40px;
+  background-image: url("../../../../assets/img/animation-back.jpg");
+  background-repeat: repeat-x;
+}
+
+img#sun {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.park-back img.larger {
+  width: 8%;
+}
+
+.park-back img.smaller {
+  width: 4%;
+}

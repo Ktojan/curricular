@@ -44,6 +44,7 @@ p {
     background-color: #eee7e7;
     padding: 1rem;
     border: 3px solid var(--main-color);
+    height: 100%;
 }
 
 .section {
@@ -135,6 +136,7 @@ p {
     border-width: 2px;
     border-color: rgb(192, 192, 192);
     border-style: groove;
+    margin-bottom: 0.75em;
 }
 
 input {

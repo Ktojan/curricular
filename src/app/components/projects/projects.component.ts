@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Project } from '../../models/project';
 import { DataService } from '../../services/data.service';
@@ -14,7 +14,7 @@ export class ProjectsComponent implements OnInit {
     public pet_projects: Project[] = [];
     public loaded = false;
 
-    constructor(private dataService: DataService, private sanitizer: DomSanitizer) { 
+    constructor(private dataService: DataService, private sanitizer: DomSanitizer, private ngZone: NgZone) { 
       }
 
     ngOnInit() {
@@ -26,13 +26,14 @@ export class ProjectsComponent implements OnInit {
                 return proj;
             }
             );
+            
             this.pet_projects = data.filter((proj: { commercial: any; }) => !proj.commercial);
             this.loaded = true;
         });
     }
 
     getEmbLink(mediaLink: string): SafeResourceUrl {
-        return this.sanitizer.bypassSecurityTrustResourceUrl(mediaLink);
+        return this.ngZone.runOutsideAngular(() => this.sanitizer.bypassSecurityTrustResourceUrl(mediaLink));
     }
 
 }

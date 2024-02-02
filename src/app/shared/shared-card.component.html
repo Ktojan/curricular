@@ -1,0 +1,11 @@
+<mat-card class="grid-item">
+  <mat-card-header>
+    <mat-card-title>{{title}}</mat-card-title>
+    <button *ngIf="!hideHtmlToggler" (click)="toggleView()">
+      Show {{htmlShow ? 'UI' : 'key code'}}</button>
+    <mat-card-subtitle class="hide-for-small">{{subtitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <ng-content></ng-content>
+  </mat-card-content>
+</mat-card>

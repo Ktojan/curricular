@@ -1,0 +1,19 @@
+.grid-projects {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(242px, 49%)); */
+    grid-gap: 0.7rem;
+    background-color: #eee7e7;
+    padding: 1rem;
+    border: 3px solid var(--main-color);
+}
+
+
+@media (max-device-width: 768px) {
+    .grid-projects {
+        grid-template-columns: 100%;
+    }
+
+    .box > p {
+        transform: rotate(270deg);
+    }
+}

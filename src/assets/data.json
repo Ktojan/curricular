@@ -2,10 +2,13 @@
   "profile": {
     "img_profile": "./assets/img/profile.jpg",
     "name": "Andrey Karpovich",
-    "born_year": "1986",
+    "born_year": 1986,
     "born_city": "Odessa",
-    "current_city": "Kiev",
-    "phone_number": "063-72-16-651"
+    "current_city": "Lisbon",
+    "email": "karpovich.andrey@gmail.com",
+    "whatsapp": "+380980756478",
+    "linkedinURL": "https://www.linkedin.com/in/andrey-karpovich-345701131/",
+    "githubURL": "https://github.com/Ktojan/"
   },
 
   "education": [
@@ -65,7 +68,7 @@
       "description": "Absolutely non-relevant experience, sadly."
     },
     {
-      "years": "oct 2021 - febr 2022",
+      "years": "dec 2021 - febr 2022",
       "company": "ROZETKA",
       "companySite": "https://rozetka.com.ua/",
       "position": "strong-middle Front-end Developer",
@@ -74,7 +77,7 @@
         "Implemented from scratch all functions for the new image-slider component that was soon published"]
     },
     {
-      "years": "dec 2020 - oct 2021",
+      "years": "dec 2020 - nov 2021",
       "company": "DAXX (Grid Dynamics)",
       "companySite": "https://www.daxx.com/",
       "position": "middle Front-end Developer",
@@ -99,14 +102,7 @@
       "achievs": ["Was involved in one old project on AngularJS. In 2 weeks got acknowledged with it from zero and succeed in further project support and expanding (but don't want to repeat)"]
     },
     {
-      "years": "oct 2018 - apr 2019",
-      "company": "OSF Global Services",
-      "companySite": "https://osf.digital/",
-      "position": "junior Front-end Developer",
-      "description": "Multifunctional merchant online-stores on Salesforce Commerce Cloud platform. Main project: Ubisoft store. Tools: Salesforce(demandware), native JS, jQuery, scss, gulp; Sourcetree, JIRA."
-    },
-    {
-      "years": "feb 2018 - sep 2018",
+      "years": "feb 2018 - may 2019",
       "company": "DataInfo (Kanosoftware)",
       "position": "junior Front-end Developer",
       "description": "Worked for reconstruction of document-flow app for Procuracy department. Tools: ExtJS framework, native JS, scss, AJAX, REST-api; Postman, Sourcetree."

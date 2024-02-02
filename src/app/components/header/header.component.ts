@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
     {label: 'Education', link: 'education', icon: "fa fa-graduation-cap" },
     {label: 'Experience', link: 'experience', icon: "fa fa-check-square-o" },
     {label: 'Projects', link: 'projects', icon: "fa fa-cubes" },  
+    {label: 'Sandbox', link: 'sandbox', icon: "fa fa-cogs" },  
   ]
   constructor() { }
 

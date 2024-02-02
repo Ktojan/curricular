@@ -1,0 +1,34 @@
+
+
+/* 
+.pet-projects {
+    grid-template-columns: repeat(auto-fit, minmax(242px, 49%));
+} */
+:host {
+    margin-bottom: 2rem;
+}
+
+.grid-item {
+    border: 2px solid var(--main-color);
+}
+
+.mat-card-title {
+    justify-content: center;
+    display: flex;
+    color: var(--auxiliary-main-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.mat-card-header button{
+    cursor: pointer;
+    background-color: orange;
+    font-weight: bold;
+}
+
+.mat-card-image {
+    border: 1px solid black;
+    margin-top: 0 !important;
+}
+
+

@@ -20,6 +20,11 @@ header {
     background-color: var(--main-gray-color);
 }
 
+.grid-menu-item:last-child {
+    border: 6px solid lemonchiffon;
+    cursor: progress;
+}
+
 .grid-menu-item.active {
     background: var(--auxiliary-main-color);
     color: #fff;

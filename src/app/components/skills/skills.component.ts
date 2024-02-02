@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Skill } from '../../models/skill';
 import { DataService } from '../../services/data.service';
+import { DEFAULT_SKILL } from '../../shared/defaults';
 
-interface SkillColored extends Skill {
+export interface SkillColored extends Skill {
   classcolor: {
     color: string,
     class_progress: string
@@ -16,7 +17,7 @@ interface SkillColored extends Skill {
 })
 export class SkillsComponent implements OnInit {
 
-  public skills: SkillColored[] = [];
+  public skills: SkillColored[] = [DEFAULT_SKILL];
   public loaded = false;
 
   constructor(private dataService: DataService) { }
@@ -24,12 +25,12 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
     this.dataService.url = DataService.DATA;
     this.dataService.getSection('skills').subscribe(data => {
+      this.loaded = true;
       this.skills = data;
 
       for (let skill of this.skills) {
         skill['classcolor'] = this.chooseColor(skill);
       }
-      this.loaded = true;
     }, error => {
       console.log(error);
       this.loaded = true;

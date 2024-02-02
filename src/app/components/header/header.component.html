@@ -1,8 +1,10 @@
 <header id="navbar" class="grid-item">
     <section class="grid-menu">
-        <nav *ngFor="let item of navigationLinks" class="grid-menu-item "
+        <nav *ngFor="let item of navigationLinks; let last = last" class="grid-menu-item "
          [routerLink]="[item.link]" routerLinkActive="active">
-            <a class="nav-link"><i [class]="item.icon" aria-hidden="true"></i>{{item.label}}</a>
+            <a class="nav-link">
+                <i [class]="item.icon" aria-hidden="true"></i><span class="hide-for-small">{{item.label}}</span>
+            </a>
         </nav> 
     </section>
 </header>

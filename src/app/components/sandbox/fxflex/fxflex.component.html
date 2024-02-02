@@ -1,0 +1,26 @@
+<shared-card 
+      [title]="'fxLayout (Birdboxes)'"
+      [class.fxflex-card]="!isHtmlMode"
+      (showHtml)="toggleHtml($event)">
+      <pre *ngIf="isHtmlMode; else mainView">{{code}}</pre>
+      <ng-template #mainView>
+      <fieldset class="app-fieldset">
+        <legend>Horizontal align</legend>
+          <mat-radio-group [(ngModel)]="horizAlign">
+            <mat-radio-button *ngFor="let align of horizAlignArr"
+            [value]="align">{{align}}</mat-radio-button>
+          </mat-radio-group>
+      </fieldset>
+      <fieldset class="app-fieldset">
+        <legend>Vertical align</legend>
+          <mat-radio-group [(ngModel)]="verticalAlign">
+            <mat-radio-button *ngFor="let align of verticalAlignArr" 
+            [value]="align">{{align}}</mat-radio-button>
+          </mat-radio-group>
+      </fieldset>
+      <div class="bird-boxes" fxLayout="row wrap" [fxLayoutAlign]="horizAlign + ' ' + verticalAlign">
+        <div *ngFor="let obj of fxLayoutConfig; let i=index" class="box" [style.background-color]="obj.color"
+          [style.height]="obj.height+'px'"><p>{{obj.bird}}</p></div>
+      </div>
+      </ng-template>
+    </shared-card>
