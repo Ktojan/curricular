@@ -1,0 +1,32 @@
+<shared-card [title]="'HTML5 APIs'" (showHtml)="toggleHtml($event)">
+  <pre *ngIf="isHtmlMode; else mainView">{{code}}</pre>
+  <ng-template #mainView>
+    <fieldset class="app-fieldset">
+      <legend aria-label="HTML Geolocation Api">HTML Geolocation API</legend>
+      <button *ngIf="!isSupportGeo" type="button" (click)="geoLocation()">
+        Detect your location (once allowed)
+      </button>
+      <p *ngIf="!isSupportGeo; else geoInfo">{{userLocation}}</p>
+      <ng-template #geoInfo>
+        <b>Coordinates</b>
+        Latitude: {{userLocation?.latitude}}
+        Longitude: {{userLocation?.longitude}}
+        <span *ngIf="userLocation?.country">Country: {{userLocation?.country}}</span>
+      </ng-template>
+    </fieldset>
+    <fieldset class="app-fieldset">
+      <legend aria-label="Local storage and Session Storage">Local/Session Storage</legend>
+      <button type="button" (click)="setToStorages();">Set</button>
+      <button type="button" (click)="getFromStorages()">Get</button>
+      <button type="button" (click)="clearStorages()" id="clear">Clear storages</button>
+      <button type="button" (click)="reloadPage()" id="reload">Reload page</button>
+      <p><b>LocalStorage:</b> {{localSt}}</p>
+      <p><b>SessionStorage:</b> {{sessionSt}}</p>
+    </fieldset>
+
+    <dialog #storageMessage id="storageDialog">
+      <p><b>{{modalText}}</b></p>
+      <button autofocus (click)="storageMessage.close()">Close</button>
+    </dialog>
+  </ng-template>
+</shared-card>

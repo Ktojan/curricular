@@ -2,11 +2,22 @@
   "profile": {
     "img_profile": "./assets/img/profile.jpg",
     "name": "Andrey Karpovich",
-    "born_year": "1986",
+    "born_year": 1986,
     "born_city": "Odessa",
-    "current_city": "Kiev",
-    "phone_number": "063-72-16-651"
-  },
+    "current_city": "Lisbon",
+    "email": "karpovich.andrey@gmail.com",
+    "whatsapp": "+380980756478",
+    "linkedinURL": "https://www.linkedin.com/in/andrey-karpovich-345701131/",
+    "githubURL": "https://github.com/Ktojan/",
+    "about": "I'm a Frontend Software Engineer with about 5 years of professional experience in the field of web development. Broad experience in improving, extending, testing, and maintaining UI of modern software applications, including support of inner-library entities and common modules. Great team player, able to explain complex problems in a simplified way, with helpful examples and demos. Currently looking for on-site/hybrid (in Portugal) or remote model of working.",
+    "interests": "Woodworking, guitar, singing, chess, drone-filming",
+    "languages": [
+      { "lang": "Ukrainian", "level": "Native", "label": "🇺🇦"},
+      { "lang": "Russian", "level": "Native"},
+      { "lang": "English", "level": "Fluent", "label": "🇺🇸"},
+      { "lang": "Portuguese", "level": "A2-B1", "label": "🇵🇹"}
+    ]
+  }, 
 
   "education": [
     {
@@ -65,42 +76,41 @@
       "description": "Absolutely non-relevant experience, sadly."
     },
     {
-      "years": "oct 2021 - febr 2022",
+      "years": "dec 2021 - febr 2022",
       "company": "ROZETKA",
       "companySite": "https://rozetka.com.ua/",
       "position": "strong-middle Front-end Developer",
-      "description": "It's a 'Ukrainian Amazon', the largest online store. "
+      "description": "It's a 'Ukrainian Amazon', the largest online store. ",
+      "achievs": ["In a few weeks started implementing tasks on the hardest part of frontend: widely reusable common (library) components.", 
+        "Implemented from scratch all functions for the new image-slider component that was soon published"]
     },
     {
-      "years": "dec 2020 - oct 2021",
+      "years": "dec 2020 - nov 2021",
       "company": "DAXX (Grid Dynamics)",
       "companySite": "https://www.daxx.com/",
       "position": "middle Front-end Developer",
-      "description": "Daxx is a Netherlands-based software development and technology consulting company with nearly 20 years of experience and over 450 experts on board."
+      "description": "Daxx is a Netherlands-based software development and technology consulting company with nearly 20 years of experience and over 450 experts on board.",
+      "achievs": ["Have been communicating directly with product owner and left him satisfied with both understanding of the project and code implementation",
+      "Was the main frontend dev on the project and provided some help and supervision for junior-colleague"]
     },
     {
       "years": "march 2020 - nov 2020",
       "company": "The Product Engine / Ernst&Young",
       "companySite": "https://productengine.io/",
       "position": "middle Front-end Developer",
-      "description": "Document intelligence - automation of contracts and billing review with AI algoritms"
+      "description": "Document intelligence - automation of contracts and billing review with AI algoritms",
+      "achievs": ["Implemented new feature adapting the Angular 'ngTemplateOutletContext' property to the project's needs (it's not actual project's code, just demo example)", "../../../assets/img/daxx_achiev.png", "../../../assets/img/daxx_achiev_2.png"]
     },
     {
       "years": "may 2019 - march 2020",
       "company": "DIGIS (DO IT)",
       "companySite": "https://digiscorp.com/",
       "position": "middle Front-end Developer",
-      "description": "Projects: fund market analyzing and visualizing tool www.vseakcii.ru; car-rent french service on Angular https://www.parkopoly.co/."
+      "description": "Projects: fund market analyzing and visualizing tool www.vseakcii.ru; car-rent french service on Angular https://www.parkopoly.co/.",
+      "achievs": ["Was involved in one old project on AngularJS. In 2 weeks got acknowledged with it from zero and succeed in further project support and expanding (but don't want to repeat)"]
     },
     {
-      "years": "oct 2018 - apr 2019",
-      "company": "OSF Global Services",
-      "companySite": "https://osf.digital/",
-      "position": "junior Front-end Developer",
-      "description": "Multifunctional merchant online-stores on Salesforce Commerce Cloud platform. Main project: Ubisoft store. Tools: Salesforce(demandware), native JS, jQuery, scss, gulp; Sourcetree, JIRA."
-    },
-    {
-      "years": "feb 2018 - sep 2018",
+      "years": "feb 2018 - may 2019",
       "company": "DataInfo (Kanosoftware)",
       "position": "junior Front-end Developer",
       "description": "Worked for reconstruction of document-flow app for Procuracy department. Tools: ExtJS framework, native JS, scss, AJAX, REST-api; Postman, Sourcetree."
@@ -120,50 +130,48 @@
   ],
   "skills": [
     {
-      "name": "Javascript, Typescript",
-      "value": "89"
-    },
+      "name": "Angular 2..16",
+      "value": "86"
+    },      
     {
-      "name": "Angular 2..11",
-      "value": "72"
+      "name": "Javascript, Typescript",
+      "value": "81"
+    }, 
+    {
+      "name": "HTML5, CSS3 + SCSS, DOM-api",
+      "value": "78"
     },   
     {
-      "name": "HTML5, CSS3, DOM-api",
-      "value": "81"
-    },
-   
+      "name": "rxjs, Reactive programming, Signals",
+      "value": "72"
+    },    
     {
-      "name": "rxjs, Reactive programming",
-      "value": "69"
-    },
-    
-    {
-      "name": "State Management (ngxs)",
-      "value": "55"
-    },
-    {
-      "name": "SCSS",
-      "value": "81"
+      "name": "Angular Material, fxFlex, ag-Grid",
+      "value": "76"
     },
     {
       "name": "fxLayout, css-grid",
-      "value": "75"
+      "value": "77"
     },
     {
       "name": "XHR, AJAX",
       "value": "70"
     },
     {
-      "name": " jQuery",
-      "value": "58"
+      "name": "Libs: chart.js, pdf-viewer, Date.js",
+      "value": "70"
     },
     {
-      "name": " Agile (Scrum), JIRA",
-      "value": "99"
+      "name": " Agile (Scrum), JIRA, Trello",
+      "value": "82"
     },
     {
       "name": "Git, CI/CD",
-      "value": "79"
+      "value": "90"
+    },
+    {
+      "name": "Karma + Jasmine",
+      "value": "65"
     },
     {
       "name": "spoken English",
@@ -196,12 +204,12 @@
       "desc": "Car rent-transfer-care service in France (3 separate apps for: customers, drivers and managers, desktop and mobile). More than 2500 missions each month"
     },
     {
-      "name": "Vseakcii.ru",
+      "name": "Vseakcii",
       "commercial": true,
       "liveLink": "https://vseakcii.ru",
       "desc": "Fund market analityc service with a lot of integrated features like flexible and precise filtering, huge estimating tools, live-time trading charts",
       "tech": "VueJS, jQuery, SCSS; datatables.js, chart.js, TradingView widget",
-      "media": "https://vseakcii.ru/video/emitents.mp4",
+      "media": "",
       "img": "./assets/img/vseakcii.png"
     },
     {
@@ -213,12 +221,11 @@
       "img": "./assets/img/ubisoft.png"
     },
     {
-      "name": "Journal with dated notes",
-      "tech": "Angular 7, Material 7",
-      "img": "./assets/img/material_project.png",
-      "liveLink": "https://ktojan.github.io/Angular-Material_plus_Firebase",
-      "codeLink": "https://github.com/Ktojan/Angular-Material_plus_Firebase",
-      "desc": "It's a simple app with short contact-list where you can look through contacts info and also notes (Material Table with filtering, sorting, pagination), add new ones."
+      "name": "Wooden-stuff online store",
+      "tech": "Angular 16, Signals + rxjs",
+      "img": "./assets/img/wooden_store.png",
+      "codeLink": "https://github.com/Ktojan/Wooden_stuff_shop_Angular16",
+      "desc": "2023 year. Small but scalable store of hand-made wooden pieces of furniture."
     },
     {
       "name": "Angular plus Firebase ",
@@ -240,7 +247,6 @@
       "name": "Hockey game on JS",
       "tech": "JS (OOP)",
       "img": "./assets/img/HockeyJS.png",
-      "liveLink": "https://ktojan.github.io/hockey_js/",
       "codeLink": "https://github.com/Ktojan/hockey_js",
       "desc": "2D-game resolved on JS with active classes-inheritance; for displaying used HTML tag 'canvas'"
     },

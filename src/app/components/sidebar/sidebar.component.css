@@ -1,71 +1,54 @@
 .sidebar-wrapper {
     height: 100%;
-    background:var(--auxiliary-main-color);
+    background: var(--auxiliary-main-color);
     color: #fff;
 }
 
-    .sidebar-wrapper a {
-        color: #fff;
-    }
+.sidebar-wrapper a {
+    color: #fff;
+}
 
-    .sidebar-wrapper .profile-container {
-        text-align: center;
-        padding: 30px;
-        background: rgba(0, 0, 0, 0.2);
-        color: #fff;
-    }
+.sidebar-wrapper .profile-container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
 
-    .sidebar-wrapper .name {
-        font-size: 24px;
-        font-weight: 900;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
+.sidebar-wrapper .name {
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 
-    .sidebar-wrapper .tagline {
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+.sidebar-wrapper .tagline {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 
-    .sidebar-wrapper .profile {
-        margin-bottom: 15px;
-        width: 13vw;
-        max-width: 215px;
-        border-radius: 50%;
-        border-style: solid;
-    }
+.sidebar-wrapper .profile {
+    margin-bottom: 15px;
+    width: 13vw;
+    max-width: 215px;
+    border-radius: 50%;
+    border-style: solid;
+}
 
-    .sidebar-wrapper .contact-list .fa {
-        margin-right: 5px;
-        font-size: 18px;
-        vertical-align: middle;
-    }
+.sidebar-wrapper .contact-list .fa {
+    margin-right: 12px;
+    font-size: 20px;
+    vertical-align: middle;
+}
 
-    .sidebar-wrapper .contact-list li {
-        margin-bottom: 15px;
-        text-overflow: ellipsis;
-    }
+.sidebar-wrapper .contact-list li {
+    margin-bottom: 22px;
+    text-overflow: ellipsis;
+}
 
-    .sidebar-wrapper .contact-list li:last-child {
-        margin-bottom: 0;
-    }
-
-    .sidebar-wrapper .container-block {
-        padding: 6%;
-    }
-
-    .sidebar-wrapper .container-block-title {
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 700;
-        margin-top: 0;
-        margin-bottom: 1%;
-    }
-
-
-   
-
-    
+.sidebar-wrapper .container-block {
+    padding: 6%;
+}

@@ -1,5 +1,12 @@
 <div id="experience" class="content">
     <ng-container *ngIf="loaded">
+        <fieldset class="app-fieldset">
+            <legend>Display mode</legend>
+        <div>
+            <input #one type="checkbox" id ="one" [ngModel]="showAchievs" (ngModelChange)="showAchievs = one.checked"/>
+            <label for="one">Achievement {{ showAchievs ? 'shawn' : 'hidden'}}</label>
+          </div>    
+        </fieldset>
         <section class="section experiences-section" >
             <div class="item" *ngFor="let row of experiences">
                 <div class="meta">
@@ -14,6 +21,13 @@
                 <div class="details">
                     <p>{{row.description}}</p>
                 </div><!--//details-->
+                <section *ngIf="showAchievs && row.achievs && row.achievs.length > 0" class="details">
+                    <h5 class="company"><i class="fa fa-flag-checkered"></i> Achievements</h5>
+                    <ul *ngFor="let item of row.achievs">
+                        <li *ngIf="!item.includes('img/')">{{item}}</li>
+                        <img *ngIf="item.includes('img/')" [src]="item" max-width="50vw">
+                    </ul>                        
+                </section><!--//details-->
                 <hr />
             </div><!--//item-->
         </section><!--//section-->

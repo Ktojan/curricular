@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { AsyncPipe } from '@angular/common';
+import { AsyncPipe, KeyValuePipe } from '@angular/common';
 
 // Componets
 import { AppComponent } from './app.component';
@@ -16,19 +16,13 @@ import { StudiesComponent } from './components/studies/studies.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { DataService } from './services/data.service'
 
-import {
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatTableModule,
-    MatTabsModule
-} from '@angular/material';
-import { CdkTableModule } from '@angular/cdk/table';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ProjectPageComponent } from './components/projects/project-page/project-page.component';
+import { SandboxComponent } from './components/sandbox/sandbox.component';
+import { SharedStuffAndMaterialModule } from './shared/shared.module';
+import { FxflexComponent } from './components/sandbox/fxflex/fxflex.component';
+import { AnimationsComponent } from './components/sandbox/animations/animations.component';
+import { HtmlApisComponent } from './components/sandbox/html-apis/html-apis.component';
 
 @NgModule({
   declarations: [
@@ -41,26 +35,23 @@ import { ProjectPageComponent } from './components/projects/project-page/project
     StudiesComponent,
     ProjectsComponent,
     NotFoundPageComponent,
-    ProjectPageComponent,
+    SandboxComponent,
+    FxflexComponent,
+    AnimationsComponent,
+    HtmlApisComponent,
   ],
   imports: [
+    SharedStuffAndMaterialModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatTableModule,
-    MatTabsModule,
-    CdkTableModule,
   ],
   providers: [
     DataService,
-    AsyncPipe
+    AsyncPipe,
+    KeyValuePipe
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

@@ -6,11 +6,8 @@
     grid-template-columns: auto minmax(17%, 21%);
 }
 
-.grid-item {
-    background: #fff;
-}
-
 .grid-content {
     display: grid;
+    grid-template-rows: 97px minmax(500px, max-content);
 }
 

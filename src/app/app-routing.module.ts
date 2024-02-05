@@ -7,8 +7,8 @@ import { StudiesComponent } from './components/studies/studies.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
-import { ProjectPageComponent } from './components/projects/project-page/project-page.component';
 import { ProjectAccessGuard } from './guards/project-access.guard';
+import { SandboxComponent } from './components/sandbox/sandbox.component';
 
 const APP_ROUTES: Routes = [
   {path: 'about', component: HomeComponent },
@@ -16,7 +16,7 @@ const APP_ROUTES: Routes = [
   {path: 'education', component: StudiesComponent },
   {path: 'experience', component: ExperienceComponent },
   {path: 'projects', component: ProjectsComponent, canActivate: [ProjectAccessGuard] },
-  //{path: 'projects/:id', component: ProjectPageComponent},
+  {path: 'sandbox', component: SandboxComponent },
   {path: '', pathMatch: 'full', redirectTo: 'about'},
   {path: '**', component: NotFoundPageComponent}
 ];

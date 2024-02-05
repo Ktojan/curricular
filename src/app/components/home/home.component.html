@@ -3,63 +3,42 @@
     <section class="section summary-section">
         <h2 class="section-title"><i class="fa fa-male" aria-hidden="true"></i>Personal info</h2>
         <p>
-            Was born in {{profile.born_year}} in {{profile.born_city}}, from 2020 live in {{profile.current_city}}. I have a balanced character, realistic worldview, creative approach to life. Stick to stoicism.
+            Was born in {{profile.born_year}} in {{profile.born_city}} (Ukraine), from 2024 live in {{profile.current_city}} area. I possess a balanced character, emotional maturity, a wide worldview, and a creative approach to issues.
         </p>
-       
-        <div class=" show-for-small">
-            <h2 class="section-title"><i class="fa fa-male" aria-hidden="true"></i>Karpovich Andrey</h2>
-            <h3 class="tagline">Frontend developer</h3>
-            <ul class="list-unstyled">
-                <li class="email"><i class="fa fa-envelope"></i><a href="mailto: karpovich.andrey@gmail.com"> karpovich.andrey@gmail.com</a></li>
-                <li class="phone"><i class="fa fa-phone"></i><a [href]="profile.phone_number"> {{profile.phone_number}}</a></li>
-                <li class="linkedin"><i class="fa fa-skype"></i> andrey-traveller</li>
-                <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/andrey-karpovich-345701131" target="_blank"> LinkedIn</a></li>
-                <li class="github"><i class="fa fa-github"></i><a href="https://github.com/Ktojan" target="_blank"> github.com/Ktojan</a></li>
-            </ul>
-        </div>
 
-            <h2 class="section-title"><i class="fa fa-user"></i>Actual job expectations</h2>
+            <h2 class="section-title"><i class="fa fa-user"></i>Experience and job expectations</h2>
             <div class="summary">
-                <p>
-                    I'm looking for involv.ement as front-end developer in sapid huge projects with modern
-                    tools (e.g. Angular 8). Programming is more prefferable for me than a markup or design, project area and basic ideas are important too.
-                    Social activities and live collaboration as well as joint leisure with colleagues are valuable for me.
-                </p>
-
-                <div class="container-block hide-for-small">
-                    <h2 class="section-title"><i class="fa fa-street-view" aria-hidden="true"></i>Interests</h2>
-                    <p>
-                        Drones, singing, guitar, theatre, chess, box, ancient greek philosophy, social science, yoga.
-                    </p>
-                </div>
-
-                <div class="container-block hide-for-small">
-                    <h2 class="section-title"><i class="fa fa-language" aria-hidden="true"></i>Languages</h2>
-                    <ul class="stuff-list">
-                        <li>Russian <span class="lang-desc">(Native)</span></li>
-                        <li>Ukrainian <span class="lang-desc">(Fluent)</span></li>
-                        <li>English <span class="lang-desc">(Upper Intermediate)</span></li>
-                        <li>Spanish <span class="lang-desc">(Elementary)</span></li>
-                    </ul>
-                </div>
-
+                <p>{{profile.about}}</p>
+            
                 <h2 class="section-title"><i class="fa fa-info" aria-hidden="true"></i>This project</h2>
                 <p>
-                    This curriculum vitae SPA-app was created via Angular7 with elements of Angular Material. The
-                    goal is to reveal to the world how brilliant I am in both Angular and front-end in general.
+                    <b>Up-to-date: <i>February 2024</i>.</b> This curriculum vitae SPA-app was created in 2021 via Angular7 with elements of Angular Material.
                     You can explore the code <a href="https://github.com/Ktojan/curricular" target="_blank">on Github</a>.
-                                </p>
-                <p>The interface is about to be updated, aswell as Angular version (from 7 to 11).</p>
-                
-                    <!-- <ul><b>Features, used in the project:</b> 
-                        <li>CSS-variables</li>
-                        <li>Route guard <a [routerLink]="['/projects']">(canActivate)</a></li>
-                        <li>Shadow DOW </li>
-                    </ul>
+                </p>
+            
+                <ul><b>Features and patterns, used in the project:</b>
+                    <li>Architecture of app according to SOLID and DRY principles</li>
+                    <li>Shared module and some shared (reusable) components</li>
+                    <li>CSS-variables for styling</li>
+                    <li>Responsive design (due to Grid-css pattern and @media styles)</li>
+                    <li>Wide usage of Angular Material components such as:
+                        MatCard, MatButton, MatIcon, MatSidenav, MatTable, MatRadio etc.</li>
+                    <li>(Sandbox) fxFlex design layout</li>
+                    <li>(Sandbox) Angular built-in animations; A11y properties</li>
+                    <li>(Sandbox) HTML5 APIs examples</li>
+                </ul>            
+            </div>
 
-                    <popup-info data-text="Your card validation code (CVC) is an extra
-                    security feature — it is the last 3 or 4
-                    numbers on the back of your card."></popup-info> -->
+            <div class="container-block hide-for-small">
+                <h2 class="section-title"><i class="fa fa-street-view" aria-hidden="true"></i>Interests</h2>
+                <p>{{profile.interests}}</p>
+            </div>
+        
+            <div class="container-block hide-for-small">
+                <h2 class="section-title"><i class="fa fa-language" aria-hidden="true"></i>Languages</h2>
+                <div class="lang-list">
+                    <span *ngFor="let item of profile.languages">{{item.label}} {{item.lang}} ({{item.level}})</span>
+                </div>
             </div>
 </section>
 </div>

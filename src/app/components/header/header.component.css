@@ -7,7 +7,7 @@ header {
 
 .grid-menu {
     display: grid;
-    grid-template-columns: repeat(5, minmax(110px, 170px));
+    grid-template-columns: repeat(6, minmax(120px, 170px));
     grid-gap: 1rem;
 }
 
@@ -15,9 +15,14 @@ header {
     border-radius: 4px;
     cursor: pointer;
     border: 1px solid #ddd;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     outline: none;
     background-color: var(--main-gray-color);
+}
+
+.grid-menu-item:last-child {
+    border: 6px solid var(--main-yellow-color);
+    cursor: progress;
 }
 
 .grid-menu-item.active {
@@ -33,7 +38,7 @@ header {
 }
 
 .fa {
-   font-size: 24px;
-   padding-right: 9px;
+   font-size: 20px;
+   padding-right: 3px;
 }
 

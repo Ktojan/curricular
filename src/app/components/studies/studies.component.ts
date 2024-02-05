@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { finalize } from 'rxjs/operators';
 import { Education } from '../../models/education';
 import { DataService } from '../../services/data.service';
 
@@ -19,12 +20,9 @@ export class StudiesComponent implements OnInit {
     this.dataService.url = DataService.DATA;
     this.dataService.getSection("education").subscribe(data => {
       this.studies = data;
-      this.loaded =true;
     }, error => {
       console.log(error);
-      this.loaded =true;
-    });
-
+    }, () => { this.loaded =true; })
   }
 
 }

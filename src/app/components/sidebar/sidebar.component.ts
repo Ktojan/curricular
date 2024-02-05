@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Profile } from '../../models/profile';
+import { IProfile } from '../../models/profile';
 import { DataService } from '../../services/data.service';
+import { EMPTY_PROFILE } from '../../shared/defaults';
 
 @Component({
   selector: 'sidebar',
@@ -9,20 +10,12 @@ import { DataService } from '../../services/data.service';
 })
 export class SidebarComponent implements OnInit {
 
-  public profile: Profile = {
-    born_city: "",
-    born_year: 0,
-    current_city: "",
-    img_profile: "",
-    name: "",
-    phone_number: ""
-  };
-
+  public profile: IProfile = EMPTY_PROFILE;
   constructor(private dataService:DataService) { }
 
   ngOnInit() {
     this.dataService.url = DataService.DATA;
-    this.dataService.getSection('profile').subscribe((data: Profile) => this.profile = data);
+    this.dataService.getSection('profile').subscribe((data: IProfile) => this.profile = data);
   }
 
 }

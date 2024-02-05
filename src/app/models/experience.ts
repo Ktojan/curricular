@@ -3,5 +3,6 @@ export interface Experience {
   company: string,
   companySite?: string,
   position: string,
-  description?: string
+  description?: string,
+  achievs?: string[]
 }
