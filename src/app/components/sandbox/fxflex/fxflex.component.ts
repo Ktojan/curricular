@@ -1,3 +1,4 @@
+import { FocusOrigin } from '@angular/cdk/a11y';
 import { Component, OnInit } from '@angular/core';
 import { FXFLEX_CODECHUNK, FXLAYOUTCONFIG, IfxLayoutConfig } from '../sandbox.data';
 
@@ -18,6 +19,11 @@ export class FxflexComponent {
 
   toggleHtml(curValue: boolean = false) {
     this.isHtmlMode = curValue;
+  }
+
+  //for Accessibility styling
+  formatOrigin(origin: FocusOrigin): string {
+    return origin ? origin + ' focused' : 'blurred';
   }
 
 }

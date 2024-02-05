@@ -21,7 +21,7 @@ header {
 }
 
 .grid-menu-item:last-child {
-    border: 6px solid lemonchiffon;
+    border: 6px solid var(--main-yellow-color);
     cursor: progress;
 }
 

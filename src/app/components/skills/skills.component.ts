@@ -43,10 +43,10 @@ export class SkillsComponent implements OnInit {
     if (skill.value >= 80 && skill.value <= 100) {
       classcolor.color = "green";
       classcolor.class_progress = "bg-success";
-    } else if (skill.value >= 60 && skill.value < 80) {
+    } else if (skill.value >= 70 && skill.value < 80) {
       classcolor.color = "blue";
       classcolor.class_progress = "bg-info";
-    } else if (skill.value >= 40 && skill.value < 60) {
+    } else if (skill.value >= 40 && skill.value < 70) {
       classcolor.color = "yellow";
       classcolor.class_progress = "bg-warning";
     } else {

@@ -45,3 +45,7 @@ img#sun {
 .park-back img.smaller {
   width: 4%;
 }
+
+.cdk-keyboard-focused {
+  border: 3px dotted var(--main-color) !important;
+}

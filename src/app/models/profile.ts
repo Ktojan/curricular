@@ -7,5 +7,8 @@ export interface IProfile {
   email: string,
   whatsapp: string,
   linkedinURL: string,
-  githubURL: string
+  githubURL: string,
+  about: string,
+  interests: string,
+  languages: {lang: string, level: string, label?: any}[]
 }

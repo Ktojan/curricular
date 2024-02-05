@@ -22,6 +22,7 @@ import { SandboxComponent } from './components/sandbox/sandbox.component';
 import { SharedStuffAndMaterialModule } from './shared/shared.module';
 import { FxflexComponent } from './components/sandbox/fxflex/fxflex.component';
 import { AnimationsComponent } from './components/sandbox/animations/animations.component';
+import { HtmlApisComponent } from './components/sandbox/html-apis/html-apis.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { AnimationsComponent } from './components/sandbox/animations/animations.
     SandboxComponent,
     FxflexComponent,
     AnimationsComponent,
+    HtmlApisComponent,
   ],
   imports: [
     SharedStuffAndMaterialModule,

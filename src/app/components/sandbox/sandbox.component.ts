@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  loaded = false;  
+  loaded = true;  
 
   ngOnInit() {
     // mocking loading
-    setTimeout(() => this.loaded = true, 955);
+    // setTimeout(() => this.loaded = true, 955);
   }
 
   

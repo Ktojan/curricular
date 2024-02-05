@@ -5,17 +5,21 @@
       <pre *ngIf="isHtmlMode; else mainView">{{code}}</pre>
       <ng-template #mainView>
       <fieldset class="app-fieldset">
-        <legend>Horizontal align</legend>
-          <mat-radio-group [(ngModel)]="horizAlign">
+        <legend aria-label="Horizontal align options">Horizontal align</legend>
+          <mat-radio-group [(ngModel)]="horizAlign" 
+          cdkMonitorSubtreeFocus (cdkFocusChange)="subtreeOrigin = formatOrigin($event);">
             <mat-radio-button *ngFor="let align of horizAlignArr"
-            [value]="align">{{align}}</mat-radio-button>
+            [value]="align"
+            cdkMonitorElementFocus (cdkFocusChange)="subtreeOrigin = formatOrigin($event);" [aria-label]="align">
+            {{align}} {{subtreeOrigin}}</mat-radio-button>
           </mat-radio-group>
       </fieldset>
       <fieldset class="app-fieldset">
-        <legend>Vertical align</legend>
-          <mat-radio-group [(ngModel)]="verticalAlign">
+        <legend aria-label="Vertical align options">Vertical align</legend>
+          <mat-radio-group [(ngModel)]="verticalAlign"
+           cdkMonitorSubtreeFocus (cdkFocusChange)="subtreeOrigin = formatOrigin($event);">
             <mat-radio-button *ngFor="let align of verticalAlignArr" 
-            [value]="align">{{align}}</mat-radio-button>
+            [value]="align" [aria-label]="align">{{align}} {{subtreeOrigin}}</mat-radio-button>
           </mat-radio-group>
       </fieldset>
       <div class="bird-boxes" fxLayout="row wrap" [fxLayoutAlign]="horizAlign + ' ' + verticalAlign">

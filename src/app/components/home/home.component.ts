@@ -6,6 +6,12 @@ import { EMPTY_PROFILE } from '../../shared/defaults';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  styles: [`
+  .lang-list {
+    display: flex;
+    place-content: center space-evenly;
+  }
+  `]
 })
 export class HomeComponent implements OnInit {
 

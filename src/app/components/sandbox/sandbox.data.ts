@@ -84,6 +84,58 @@ animations: [
 ],
 
 `
+
+export const HTML_APIS_CODECHUNK =
+`
+// --------- geolocation ----------
+  geoLocation(): void {
+    const pos = window.navigator.geolocation;
+    this.isSupportGeo = Boolean(pos);
+    if (!this.isSupportGeo) {
+      this.userLocation =
+        "Your browser doesn't support the Geolocation API or you've blocked permission";
+      return;
+    }
+    pos.getCurrentPosition((loc: any) => {
+      this.userLocation = {
+        latitude: loc.coords.latitude,
+        longitude: loc.coords.longitude,
+      };
+      this.userLocation.country = coordsToCountries(
+        this.userLocation.latitude,
+        this.userLocation.longitude
+      );
+    });
+  }
+..................
+// --------- local\session storage ----------
+  setToStorages() {
+    this.modalText = '';
+      window.localStorage.setItem("localstuff", "Don't forget to buy local vegetables and greenery");
+      this.modalText += window.localStorage ? ' Localstorage updated!'
+      : ' Localstorage is unavailable... ';
+      window.sessionStorage.setItem("sessiondeal", "When did you last time have session with your dentist?..");
+      this.modalText += window.sessionStorage ? ' Session storage updated!'
+      : ' Sessionstorage is unavailable...';
+    this.storagesAreEmpty = false;
+    this.getFromStorages();
+    this.openModalStorage();
+  }
+
+  getFromStorages(noModal: boolean = false) {
+    this.localSt = window.localStorage.localstuff;
+    this.sessionSt = window.sessionStorage.sessiondeal;
+    if (!noModal && !this.localSt && !this.sessionSt) {
+      this.modalText = "Well, there is no demanded properties in storages. Yeah...";
+      this.openModalStorage();
+    }
+  }
+
+  clearStorages() {
+    window.localStorage.removeItem("localstuff");
+    window.sessionStorage.removeItem("sessiondeal");
+    this.getFromStorages(true);
+  }`
 export  interface IisHtmlMode {
     fxflex: boolean,
     cssalign: boolean,

@@ -8,10 +8,11 @@
   --main-color: #6e3852;
   --auxiliary-main-color: #A15277;
   --main-gray-color: #37393c;
+  --main-yellow-color: lemonchiffon;
 }
 
 body {
-    padding: 3%;
+    padding: 1%;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     color: #545E6C;
@@ -147,6 +148,11 @@ input[type="checkbox"] {
 }
 hr {
     border-top: 1px solid rgba(0,0,0,.7) !important;
+}
+
+/* a11y styling */
+.cdk-keyboard-focused {
+    border: 3px dotted var(--main-color) !important;
 }
 
 /*  RESPONSIVENESS, DEVICES  made small = small & medium */
