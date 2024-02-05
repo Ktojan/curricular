@@ -1,3 +1,6 @@
+![image](https://github.com/Ktojan/curricular/assets/32598218/1b3f10a5-dff4-4651-a5b2-4fb582f6c247)
+
+
 # Project Curriculum vitae
 
 Angular 7 elements and features: data bindings, routing, observables, service with HTTP methods, ng-containers. 
