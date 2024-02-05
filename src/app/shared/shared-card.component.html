@@ -1,8 +1,9 @@
 <mat-card class="grid-item">
   <mat-card-header>
-    <mat-card-title>{{title}}</mat-card-title>
-    <button *ngIf="!hideHtmlToggler" (click)="toggleView()">
+    <button *ngIf="!hideHtmlToggler" (click)="toggleView()"
+    cdkMonitorElementFocus (cdkFocusChange)="subtreeOrigin = formatOrigin($event)" aria-label="toggle view button">
       Show {{htmlShow ? 'UI' : 'key code'}}</button>
+      <mat-card-title>{{title}}</mat-card-title>
     <mat-card-subtitle class="hide-for-small">{{subtitle}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>

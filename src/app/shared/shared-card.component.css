@@ -1,9 +1,5 @@
 
 
-/* 
-.pet-projects {
-    grid-template-columns: repeat(auto-fit, minmax(242px, 49%));
-} */
 :host {
     margin-bottom: 2rem;
 }
@@ -22,7 +18,7 @@
 
 .mat-card-header button{
     cursor: pointer;
-    background-color: orange;
+    background-color: var(--main-yellow-color);
     font-weight: bold;
 }
 
@@ -31,4 +27,6 @@
     margin-top: 0 !important;
 }
 
-
+.cdk-keyboard-focused {
+    outline: 4px dotted var(--main-color);
+}

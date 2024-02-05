@@ -15,7 +15,8 @@ import {
 import {MatRadioModule} from '@angular/material/radio';
 import {MatRippleModule} from '@angular/material/core';
 import { CdkTableModule } from '@angular/cdk/table';
-import {MatChipsModule} from '@angular/material/chips';
+import { A11yModule } from '@angular/cdk/a11y';
+import { MatChipsModule } from '@angular/material/chips';
 import { KeyValuePipe } from '@angular/common';
 
 @NgModule({
@@ -32,8 +33,9 @@ import { KeyValuePipe } from '@angular/common';
         MatRadioModule,
         MatRippleModule,
         MatChipsModule,
-        CdkTableModule,   
-        FlexLayoutModule,        
+        CdkTableModule,  
+        A11yModule, 
+        FlexLayoutModule,
     ],
     exports: [
         FormsModule,

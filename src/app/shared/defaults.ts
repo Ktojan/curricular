@@ -10,7 +10,10 @@ export const EMPTY_PROFILE: IProfile = {
     email: "",
     whatsapp: "",
     linkedinURL: "",
-    githubURL: ""
+    githubURL: "",
+    about: '',
+    interests: '',
+    languages: []
   };
 
 export const DEFAULT_SKILL: SkillColored = {
