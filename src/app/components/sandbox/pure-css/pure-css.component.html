@@ -1,0 +1,5 @@
+<shared-card [title]="'CSS tricks & patterns'" (showHtml)="toggleHtml($event)">
+  <pre *ngIf="isHtmlMode; else mainView">{{code}}</pre>
+  <ng-template #mainView>
+  </ng-template>
+</shared-card>
