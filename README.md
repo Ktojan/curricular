@@ -8,16 +8,10 @@ Separate json file for core static content (imitation of server).
 Material elements: mat-table, mat-card, material-icons, mat-buttons.
 Sandbox with different css, js implementations, animations.
 
+If the free hosting won't suck, you can browse demo here: http://karpovich-cv.great-site.net/about  (yeah, it's http, so click "proceed...")
 
-You can browse the project here: https://ktojan.github.io/curricular  
-
-
-
-# Development server
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-# Code scaffolding
-Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
+# Installing
+There is as usual some sheet of paper with dependencies, so use "npm install --legacy-peer-deps"
 
 # Build
 Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the -prod flag for a production build.
