@@ -1,5 +1,4 @@
-import { Component, ElementRef, TemplateRef, ViewChild } from "@angular/core";
-import * as coordsToCountries from "coordinate_to_country";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 import { HTML_APIS_CODECHUNK } from "../sandbox.data";
 
 
@@ -39,10 +38,6 @@ export class HtmlApisComponent {
         latitude: loc.coords.latitude,
         longitude: loc.coords.longitude,
       };
-      this.userLocation.country = coordsToCountries(
-        this.userLocation.latitude,
-        this.userLocation.longitude
-      );
     });
   }
 

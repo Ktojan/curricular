@@ -6,7 +6,7 @@
       <ng-template #mainView>
       <fieldset class="app-fieldset">
         <legend aria-label="Horizontal align options">Horizontal align</legend>
-          <mat-radio-group [(ngModel)]="horizAlign" 
+          <mat-radio-group id ="horizAlign" [(ngModel)]="horizAlign" 
           cdkMonitorSubtreeFocus (cdkFocusChange)="subtreeOrigin = formatOrigin($event);">
             <mat-radio-button *ngFor="let align of horizAlignArr"
             [value]="align"
@@ -16,7 +16,7 @@
       </fieldset>
       <fieldset class="app-fieldset">
         <legend aria-label="Vertical align options">Vertical align</legend>
-          <mat-radio-group [(ngModel)]="verticalAlign"
+          <mat-radio-group id ="verticalAlign" [(ngModel)]="verticalAlign"
            cdkMonitorSubtreeFocus (cdkFocusChange)="subtreeOrigin = formatOrigin($event);">
             <mat-radio-button *ngFor="let align of verticalAlignArr" 
             [value]="align" [aria-label]="align">{{align}} {{subtreeOrigin}}</mat-radio-button>
@@ -24,7 +24,7 @@
       </fieldset>
       <div class="bird-boxes" fxLayout="row wrap" [fxLayoutAlign]="horizAlign + ' ' + verticalAlign">
         <div *ngFor="let obj of fxLayoutConfig; let i=index" class="box" [style.background-color]="obj.color"
-          [style.height]="obj.height+'px'"><p>{{obj.bird}}</p></div>
+          [style.height]="obj.height+'px'"><p>{{obj.bird | birdsnames}}</p></div>
       </div>
       </ng-template>
     </shared-card>

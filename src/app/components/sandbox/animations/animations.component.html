@@ -1,8 +1,8 @@
 <shared-card [title]="'Animation samples'" (showHtml)="toggleHtml($event)">
   <pre *ngIf="isHtmlMode; else mainView">{{code}}</pre>
   <ng-template #mainView>
-    <audio #birdsaudio [autoplay]="true" [volume]="0.4">
-      <source src="../../../../assets/chirping.mp3" type="audio/mp3" />
+    <audio #birdsaudio [autoplay]="false" [volume]="0.4">
+     <source src="../../../../assets/chirping.mp3" type="audio/mp3" />
     </audio>
     <fieldset class="app-fieldset" aria-label="add animation elements">
       <legend>Add stuff to arrange the park of your dream! (or nightmare)</legend>
@@ -11,7 +11,7 @@
         {{elem.value}}
       </button>
       <button *ngIf="visibleItems.length > 0" [@appear] [@disappear] id="remove-last" (click)="removeLast()">
-        <-- remove last</button>
+        <- remove last</button>
       <button *ngIf="visibleItems.length > 2" [@appear] [@disappear] id="reset"
         (click)="visibleItems = []; visibleItemsWidth = 0; areTrees = false;">RESET</button>
       <button *ngIf="areTrees" [@appear] [@disappear] id="water" (click)="waterStart(); birdsaudio.play()"
@@ -19,7 +19,7 @@
         Water trees!</button>
     </fieldset>
     <div class="park-back">
-      <img [@sunflow]="sunflowState" src="../../../../assets/img/sun.svg" id="sun" />
+       <img [@sunflow]="sunflowState" src="../../../../assets/img/sun.svg" id="sun" />
       <img *ngFor="let item of visibleItems" [src]="'../../../../assets/img/' + item + '.svg'"
         [class]="(item.includes('tree') || item == 'girl') ? 'larger' : 'smaller'" [@appear]
         [@grow]="(item.includes('tree')) ? scaleState : 'noScale'">

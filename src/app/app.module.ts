@@ -23,6 +23,7 @@ import { SharedStuffAndMaterialModule } from './shared/shared.module';
 import { FxflexComponent } from './components/sandbox/fxflex/fxflex.component';
 import { AnimationsComponent } from './components/sandbox/animations/animations.component';
 import { HtmlApisComponent } from './components/sandbox/html-apis/html-apis.component';
+import { PureCssComponent } from './components/sandbox/pure-css/pure-css.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { HtmlApisComponent } from './components/sandbox/html-apis/html-apis.comp
     FxflexComponent,
     AnimationsComponent,
     HtmlApisComponent,
+    PureCssComponent,
   ],
   imports: [
     SharedStuffAndMaterialModule,

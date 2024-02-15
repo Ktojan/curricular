@@ -1,0 +1,8 @@
+<shared-card [title]="'CSS tricks & patterns'" (showHtml)="toggleHtml($event)">
+  <pre *ngIf="isHtmlMode; else mainView">{{code}}</pre>
+  <ng-template #mainView>
+    <span>Array with duplicates: {{arrayWithDuplicates?.join(' ')}} </span>
+    <button #cleanDupl type="button" (click)="cleanFromDupl(); cleanDupl.style.display = 'none'">Clean from duplicates</button>
+    <p><b>Array with no duplicates:</b> {{arrayWithoutDuplicates?.join(' ')}}</p>
+  </ng-template>
+</shared-card>

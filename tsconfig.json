@@ -17,12 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "types": ["jasmine"]
   },
-  // "angularCompilerOptions": {
-  //   "fullTemplateTypeCheck": true,
-  //   "strictInjectionParameters": true,
-  //   "strictInputAccessModifiers": true,
-  //   "strictTemplates": true
-  // }
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": false
+  }
 }
