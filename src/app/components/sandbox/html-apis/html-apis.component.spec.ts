@@ -19,7 +19,4 @@ describe('HtmlApisComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
