@@ -18,6 +18,7 @@ import { CdkTableModule } from '@angular/cdk/table';
 import { A11yModule } from '@angular/cdk/a11y';
 import { MatChipsModule } from '@angular/material/chips';
 import { KeyValuePipe } from '@angular/common';
+import { BirdsNamesPipe } from '../components/sandbox/fxflex/birds-names.pipe';
 
 @NgModule({
     imports: [
@@ -52,8 +53,9 @@ import { KeyValuePipe } from '@angular/common';
         MatChipsModule,
         CdkTableModule,
         FlexLayoutModule,
+        BirdsNamesPipe
     ],
-    declarations: [SharedCardComponent],
-    providers: [KeyValuePipe],
+    declarations: [SharedCardComponent, BirdsNamesPipe],
+    providers: [KeyValuePipe, BirdsNamesPipe],
 })
 export class SharedStuffAndMaterialModule { }
