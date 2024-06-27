@@ -9,17 +9,22 @@
     "whatsapp": "+380980756478",
     "linkedinURL": "https://www.linkedin.com/in/andrey-karpovich-345701131/",
     "githubURL": "https://github.com/Ktojan/",
-    "about": "I'm a Frontend Software Engineer with about 5 years of professional experience in the field of web development. Broad experience in improving, extending, testing, and maintaining UI of modern software applications, including support of inner-library entities and common modules. Great team player, able to explain complex problems in a simplified way, with helpful examples and demos. Currently looking for on-site/hybrid (in Portugal) or remote model of working.",
+    "about": "I'm a Frontend Software Engineer with about 5 years of professional experience in the field of web development. Broad expertise in improving, extending, testing, and maintaining UI of modern software applications, including support of inner-library entities and common modules. Great team player, able to explain complex problems in a simplified way, with helpful examples and demos. Currently looking for on-site (in Portugal) or remote model of working.",
     "interests": "Woodworking, guitar, singing, chess, drone-filming",
     "languages": [
       { "lang": "Ukrainian", "level": "Native", "label": "🇺🇦"},
       { "lang": "Russian", "level": "Native"},
       { "lang": "English", "level": "Fluent", "label": "🇺🇸"},
-      { "lang": "Portuguese", "level": "A2-B1", "label": "🇵🇹"}
+      { "lang": "Portuguese", "level": "B1", "label": "🇵🇹"}
     ]
   }, 
 
   "education": [
+    {
+      "years": "2024 *",
+      "subject": "Styling apps with TailwindCSS",
+      "place": "Pluralsight course (4.5 hrs)"
+    },
     {
       "years": "2021",
       "subject": "Angular Advanced",
@@ -130,8 +135,8 @@
   ],
   "skills": [
     {
-      "name": "Angular 2..16",
-      "value": "86"
+      "name": "Angular 2..17",
+      "value": "88"
     },      
     {
       "name": "Javascript, Typescript",
@@ -150,11 +155,11 @@
       "value": "76"
     },
     {
-      "name": "fxLayout, css-grid",
+      "name": "TailwindCSS, fxLayout, css-grid",
       "value": "77"
     },
     {
-      "name": "XHR, AJAX",
+      "name": "XHR, AJAX, HTTP",
       "value": "70"
     },
     {
@@ -162,11 +167,11 @@
       "value": "70"
     },
     {
-      "name": " Agile (Scrum), JIRA, Trello",
+      "name": " Agile (Scrum), JIRA, Trello; Figma",
       "value": "82"
     },
     {
-      "name": "Git, CI/CD",
+      "name": "Git, CI/CD, GitKraken",
       "value": "90"
     },
     {
@@ -231,7 +236,6 @@
       "name": "Angular plus Firebase ",
       "tech": "Angular 5",
       "img": "./assets/img/firebase.png",
-      "liveLink": "https://firemen-jan18.firebaseapp.com/",
       "codeLink": "https://github.com/Ktojan/firemen-jan18",
       "desc": "Small CRUD application, which demonstrates how an Angular app interacts with Firebase Realtime Database TECH: Angular  Small CRUD application, which demonstrates how an Angular app interacts with Firebase Realtime Database TECH: Angular."
     },
@@ -255,7 +259,6 @@
       "tech": "JS (FP)",
       "img": "./assets/img/zipcodes.png",
       "liveLink": "http://plnkr.co/edit/M8MpN12KMPXj9H6w6R76?p=preview",
-      "codeLink": "http://plnkr.co/edit/M8MpN12KMPXj9H6w6R76?p=preview",
       "desc": "Small feature on pure JS. Was used function-constructor, XHR for external API request, JS-manipulations with DOM."
     }
   ]
