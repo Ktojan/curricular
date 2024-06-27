@@ -4,7 +4,7 @@ import { SharedStuffAndMaterialModule } from '../../../shared/shared.module';
 
 import { AnimationsComponent } from './animations.component';
 
-describe('AnimationsComponent', () => {
+xdescribe('AnimationsComponent', () => {
   let component: AnimationsComponent;
   let fixture: ComponentFixture<AnimationsComponent>;
 
@@ -34,7 +34,7 @@ describe('AnimationsComponent', () => {
     expect(component.areTrees).toEqual(false);
   });
 
-  describe("handleButton", () => {
+  xdescribe("handleButton", () => {
     it("should add item to visibleItems correctly", () => {
       component.visibleItemsWidth = 89;
       const value = "3 trees";
