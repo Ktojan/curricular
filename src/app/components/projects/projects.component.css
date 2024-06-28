@@ -12,6 +12,10 @@
     grid-template-columns: repeat(auto-fit, minmax(242px, 49%));
 }
 
+.section-title {
+    text-align: center;
+}
+
 @media (max-device-width: 768px) {
     .grid-projects {
         grid-template-columns: 100%;

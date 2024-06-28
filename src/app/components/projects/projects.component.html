@@ -32,7 +32,7 @@
       <mat-card-header>
         <mat-card-title>{{project.name}}
           <div>
-            <a class="button-item" href="{{project.liveLink}}" target="_blank"><i class="fa fa-television"
+            <a *ngIf="project.liveLink" class="button-item" href="{{project.liveLink}}" target="_blank"><i class="fa fa-television"
                 aria-hidden="true"></i> LIVE</a>
             <a class="button-item" href="{{project.codeLink}}" target="_blank"><i class="fa fa-file-code-o"
                 aria-hidden="true"></i> CODE</a>

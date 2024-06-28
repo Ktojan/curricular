@@ -20,7 +20,7 @@ h1 {
     background: rgba(0,0,0,0.1);
     border-radius: 0;
     box-shadow: none;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     overflow: visible;
     position: relative;
 }
@@ -34,7 +34,7 @@ h1 {
 .progress-bar .progress-value{
     width: 295px;
     height: 100%;
-    background: #000;
+    background: var(--main-gray-color);
     font-size: 15px;
     font-weight: 600;
     color: #fff;
@@ -48,7 +48,7 @@ h1 {
 .progress .progress-bar:after,
 .progress .progress-value:after {
     content: "";
-    border-left: 13px solid rgba(0,0,0,0.1);
+    border-left: 13px solid var(--main-gray-color);
     border-top: 13px solid transparent;
     border-bottom: 13px solid transparent;
     position: absolute;
@@ -58,8 +58,8 @@ h1 {
 .progress.red .progress-bar:after {
     border-left-color: #dc3545;
 }
-.progress .progress-value:after {
-    border-left: 13px solid #000;
+.progress:after {
+    border-left: 13px solid rgba(0, 0, 0, 0.1);
 }
 .progress.blue .progress-bar:after {
     border-left-color: #17a2b8;
