@@ -1,3 +1,31 @@
+<h2 class="section-title"><i class="fa fa-home" aria-hidden="true"></i>Pet (Home) projects</h2>
+<div id="works" class="grid-projects pet-projects">
+  <ng-container *ngIf="loaded">
+    <mat-card class="grid-projects-item" *ngFor="let project of pet_projects">
+      <mat-card-header>
+        <mat-card-title>{{project.name}}
+          <div>
+            <a *ngIf="project.liveLink" class="button-item" href="{{project.liveLink}}" target="_blank"><i class="fa fa-television"
+                aria-hidden="true"></i> LIVE</a>
+            <a class="button-item" href="{{project.codeLink}}" target="_blank"><i class="fa fa-file-code-o"
+                aria-hidden="true"></i> CODE</a>
+          </div>
+        </mat-card-title>
+        <mat-card-subtitle class="hide-for-small"><b>{{project.tech}}</b></mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
+      <mat-card-content>
+        <p>{{project.desc}}</p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+  <div class="h-100" *ngIf="!loaded">
+    <div class="spinner">
+      <img src="./assets/img/spinner.gif" />
+    </div>
+  </div>
+</div>
+
 <h2 class="section-title"><i class="fa fa-briefcase" aria-hidden="true"></i>Commercial projects</h2>
 <div id="works" class="grid-projects">
   <ng-container *ngIf="loaded">
@@ -7,7 +35,7 @@
           <a class="button-item" href="{{project.liveLink}}" target="_blank"><i class="fa fa-television"
               aria-hidden="true"></i> LIVE</a>
         </mat-card-title>
-        <mat-card-subtitle class="hide-for-small">{{project.tech}}</mat-card-subtitle>
+        <mat-card-subtitle class="hide-for-small"><b>{{project.tech}}</b></mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
       <img *ngIf="!project.media" mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
@@ -25,30 +53,3 @@
   </div>
 </div>
 
-<h2 class="section-title"><i class="fa fa-home" aria-hidden="true"></i>Pet (Home) projects</h2>
-<div id="works" class="grid-projects pet-projects">
-  <ng-container *ngIf="loaded">
-    <mat-card class="grid-projects-item" *ngFor="let project of pet_projects">
-      <mat-card-header>
-        <mat-card-title>{{project.name}}
-          <div>
-            <a *ngIf="project.liveLink" class="button-item" href="{{project.liveLink}}" target="_blank"><i class="fa fa-television"
-                aria-hidden="true"></i> LIVE</a>
-            <a class="button-item" href="{{project.codeLink}}" target="_blank"><i class="fa fa-file-code-o"
-                aria-hidden="true"></i> CODE</a>
-          </div>
-        </mat-card-title>
-        <mat-card-subtitle class="hide-for-small">{{project.tech}}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
-      <mat-card-content>
-        <p>{{project.desc}}</p>
-      </mat-card-content>
-    </mat-card>
-  </ng-container>
-  <div class="h-100" *ngIf="!loaded">
-    <div class="spinner">
-      <img src="./assets/img/spinner.gif" />
-    </div>
-  </div>
-</div>
