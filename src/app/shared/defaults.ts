@@ -5,6 +5,7 @@ export const EMPTY_PROFILE: IProfile = {
     born_city: "",
     born_year: 0,
     current_city: "",
+    future_city: '',
     img_profile: "",
     name: "",
     email: "",

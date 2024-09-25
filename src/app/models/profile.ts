@@ -4,6 +4,7 @@ export interface IProfile {
   born_year: number, 
   born_city: string,
   current_city: string,
+  future_city: string,
   email: string,
   whatsapp: string,
   linkedinURL: string,
