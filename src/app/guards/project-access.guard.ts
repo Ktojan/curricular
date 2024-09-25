@@ -9,6 +9,8 @@ export class ProjectAccessGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    return true; //todo some restriction
+    const reply = 'ticket';
+    let ans =  prompt('Give please a ticket to our Mr. CanActivate Guard', reply);
+    return ans === reply;
   }
 }

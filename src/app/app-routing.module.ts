@@ -13,9 +13,9 @@ import { SandboxComponent } from './components/sandbox/sandbox.component';
 const APP_ROUTES: Routes = [
   {path: 'about', component: HomeComponent },
   {path: 'skills', component: SkillsComponent },
-  {path: 'education', component: StudiesComponent },
+  {path: 'education', component: StudiesComponent, canActivate: [ProjectAccessGuard] },
   {path: 'experience', component: ExperienceComponent },
-  {path: 'projects', component: ProjectsComponent, canActivate: [ProjectAccessGuard] },
+  {path: 'projects', component: ProjectsComponent },
   {path: 'sandbox', component: SandboxComponent },
   {path: '', pathMatch: 'full', redirectTo: 'about'},
   {path: '**', component: NotFoundPageComponent}
