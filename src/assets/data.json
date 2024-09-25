@@ -4,7 +4,8 @@
     "name": "Andrey Karpovich",
     "born_year": 1986,
     "born_city": "Odessa",
-    "current_city": "Lisbon",
+    "current_city": "Ukraine",
+    "future_city": "Portugal",
     "email": "karpovich.andrey@gmail.com",
     "whatsapp": "+380980756478",
     "linkedinURL": "https://www.linkedin.com/in/andrey-karpovich-345701131/",
@@ -140,11 +141,15 @@
     },      
     {
       "name": "Javascript, Typescript",
-      "value": "81"
+      "value": "83"
+    }, 
+    {
+      "name": "React, Next.js, Redux",
+      "value": "55"
     }, 
     {
       "name": "HTML5, CSS3 + SCSS, DOM-api",
-      "value": "78"
+      "value": "80"
     },   
     {
       "name": "rxjs, Reactive programming, Signals",
@@ -218,14 +223,6 @@
       "img": "./assets/img/vseakcii.png"
     },
     {
-      "name": "Ubisoft store",
-      "commercial": true,
-      "liveLink": "https://store.ubi.com/ie/home",
-      "desc": "I was involved in improvement, refactoring and debugging of eu- and usa-stores ",
-      "tech": "Salesforce platform (demandware), jQuery, SCSS, yarn",
-      "img": "./assets/img/ubisoft.png"
-    },
-    {
       "name": "Wooden-stuff online store",
       "tech": "Angular 16, Signals + rxjs",
       "img": "./assets/img/wooden_store.png",
@@ -233,11 +230,28 @@
       "desc": "2023 year. Small but scalable store of hand-made wooden pieces of furniture."
     },
     {
-      "name": "Angular plus Firebase ",
-      "tech": "Angular 5",
-      "img": "./assets/img/firebase.png",
-      "codeLink": "https://github.com/Ktojan/firemen-jan18",
-      "desc": "Small CRUD application, which demonstrates how an Angular app interacts with Firebase Realtime Database TECH: Angular  Small CRUD application, which demonstrates how an Angular app interacts with Firebase Realtime Database TECH: Angular."
+      "name": "Houses auction (bids)",
+      "tech": "React 18, Next.js 14, Bootstrap",
+      "img": "./assets/img/bids2.png",
+      "codeLink": "https://github.com/Ktojan/house_bids_react",
+      "liveLink": "https://houses-bids-react.vercel.app/",
+      "desc": "2024. It's a demo SPA-app: an auction for houses. 100% clean and optimized React.js code, organized with Next.js, based on SOLID rules and other design patterns."
+    },
+    {
+      "name": "Angular: live exchange, chat, product list",
+      "tech": "Angular16, ngRX, websocket, chart.js, TailwindCSS",
+      "img": "./assets/img/screen_websocket.png",
+      "codeLink": "https://github.com/Ktojan/ngrx-tailwind-websocket-demo/tree/master",
+      "liveLink": "https://ngrx-tailwind-websocket-angular.vercel.app/",
+      "desc": "2024. Consists of 3 parts: websocket + chart.js currency streamer, chat on TailwindCSS, and Products list with NGRX store and dynamic routing concepts."
+    },
+    {
+      "name": "Wooden-stuff store - React",
+      "tech": "React 18, Next.js 14, Redux, DaisyUI",
+      "img": "./assets/img/wooden-stuff-react.png",
+      "codeLink": "https://github.com/Ktojan/wooden_furniture_pet_react-redux",
+      "liveLink": "https://wooden_furniture_pet_react-redux.vercel.app/",
+      "desc": "2024. Basic store with cart and checkout of hand-made wooden pieces of furniture."
     },
     {
       "name": "Four in a row game",
