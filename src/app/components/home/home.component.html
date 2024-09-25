@@ -3,7 +3,7 @@
     <section class="section summary-section">
         <h2 class="section-title"><i class="fa fa-male" aria-hidden="true"></i>Personal info</h2>
         <p>
-            Was born in {{profile.born_year}} in {{profile.born_city}} (Ukraine), and I'm about to relocate to {{profile.current_city}} area.
+            Was born in {{profile.born_year}} in {{profile.born_city}} (Ukraine), and I'm about to relocate to {{profile.future_city}} area.
             I possess a balanced character, an emotional maturity, a wide worldview, strong discipline, and a creative approach to issues.
         </p>
 
@@ -13,7 +13,7 @@
             
                 <h2 class="section-title"><i class="fa fa-info" aria-hidden="true"></i>This project</h2>
                 <p>
-                    <b>Up-to-date: <i>July 2024</i>.</b> This SPA-app was created via Angular7 with elements of Angular Material.
+                    <b>Up-to-date: <i>September 2024</i>.</b> This SPA-app was created via Angular7 with elements of Angular Material.
                     You can explore <a href="https://github.com/Ktojan/curricular" target="_blank">the code</a>
                 </p>
                 <img src="./assets/img/lighthouse.png" width="35%" align="right" />
@@ -25,7 +25,7 @@
                     <li>Responsive design (due to Grid-css pattern and @media styles)</li>
                     <li>unit-tests (Jasmine + Karma) for the most functionality</li>
                     <li>Wide usage of Angular Material components such as:
-                        MatCard, MatButton, MatIcon, MatSidenav, MatTable, MatRadio etc.</li>
+                        MatCard, MatButton, MatSidenav, MatTable, MatRadio etc.</li>
                     <li>(Sandbox) fxFlex design layout</li>
                     <li>(Sandbox) Angular built-in animations; A11y properties</li>
                     <li>(Sandbox) HTML5 APIs examples</li>
@@ -40,7 +40,7 @@
             <div class="container-block hide-for-small">
                 <h2 class="section-title"><i class="fa fa-language" aria-hidden="true"></i>Languages</h2>
                 <div class="lang-list">
-                    <span *ngFor="let item of profile.languages">{{item.lang}} ({{item.level}})</span>
+                    <span *ngFor="let item of profile.languages">{{item.label}} {{item.lang}} ({{item.level}})</span>
                 </div>
             </div>
 </section>
