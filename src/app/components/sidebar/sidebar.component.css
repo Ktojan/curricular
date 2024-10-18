@@ -52,3 +52,11 @@
 .sidebar-wrapper .container-block {
     padding: 6%;
 }
+
+#map-chunk {
+    margin: auto;
+    width: fit-content;
+}
+
+
+    

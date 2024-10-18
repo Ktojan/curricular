@@ -4,7 +4,7 @@
         <img class="profile" [src]="profile.img_profile" alt="profile" />
         <h1 class="name">{{profile.name}}</h1>
         <h3 class="tagline">Frontend developer</h3>
-        <h2 class="tagline">Born in {{profile.born_year}} in {{profile.born_city}}.</h2>
+        <!-- <h2 class="tagline">Born in {{profile.born_year}} in {{profile.born_city}}.</h2> -->
         <h2 class="tagline"> Current location: {{profile.current_city}}. Upcoming location: {{profile.future_city}}</h2>
     </div>
 
@@ -16,4 +16,5 @@
             <li class="github"><i class="fa fa-github" ></i><a href="https://github.com/Ktojan" target="_blank">github.com/Ktojan</a></li>
         </ul>
     </div> 
+    <div id="map-chunk" #mapchunk></div>
 </div>
