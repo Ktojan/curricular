@@ -4,7 +4,7 @@
   "homepage": "https://ktojan.github.io/curricular",
   "scripts": {
     "ng": "ng",
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider && ng serve",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --prod",
     "deploy": "gh-pages -d build",
     "explore": "source-map-explorer dist/**/*.js",
