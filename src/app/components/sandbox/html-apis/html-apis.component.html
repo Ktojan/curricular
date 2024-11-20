@@ -2,8 +2,11 @@
   <pre *ngIf="isHtmlMode; else mainView">{{code}}</pre>
   <ng-template #mainView>
     <fieldset class="app-fieldset">
-      <legend aria-label="HTML Geolocation Api">HTML Geolocation API</legend>
-      <button *ngIf="!isSupportGeo" type="button" (click)="geoLocation()">
+      <legend aria-label="HTML Geolocation Api"> HTML Geolocation API + OSM plugin</legend>
+
+      <div id="detectedMap" #detectedMap></div>
+
+      <button *ngIf="!isSupportGeo" type="button" style="margin-top: 1rem;" (click)="geoLocation()">
         Detect your location (once allowed)
       </button>
       <p *ngIf="!isSupportGeo; else geoInfo">{{userLocation}}</p>

@@ -15,7 +15,10 @@
       </mat-card-header>
       <img mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
       <mat-card-content>
-        <p>{{project.desc}}</p>
+        <p>{{project.desc}}         
+        </p>
+        <a *ngIf="project.presentation"  class="button-item present" href="{{project.presentation}}" target="_blank">
+          PRESENTATION</a> 
       </mat-card-content>
     </mat-card>
   </ng-container>

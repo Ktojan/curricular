@@ -1,6 +1,8 @@
 import { Component, ElementRef, ViewChild } from "@angular/core";
 import { HTML_APIS_CODECHUNK } from "../sandbox.data";
+import { osmMap } from '../../../shared/osm-map-plugin';
 
+const BernCoords = [7.446604, 46.95021];
 
 @Component({
   selector: "app-html-apis",
@@ -9,11 +11,12 @@ import { HTML_APIS_CODECHUNK } from "../sandbox.data";
 })
 export class HtmlApisComponent {
   @ViewChild('storageMessage', { read: ElementRef }) storageModal:ElementRef<any>;
-  
+  @ViewChild('detectedMap') detectedMapElem: ElementRef<HTMLElement>;
+
   code = HTML_APIS_CODECHUNK;
   // --------- geolocation ----------
   isHtmlMode = false;
-  userLocation: GeolocationObject | string;
+  userLocation: GeolocationObject | any;
   isSupportGeo: boolean = false;
   // --------- local\session storage ----------
   storagesAreEmpty = true;
@@ -21,8 +24,21 @@ export class HtmlApisComponent {
   sessionSt = "";
   modalText = "";
 
+  ngAfterViewInit() {
+    this.setCoordsToEmbededMap();
+  }
+
+  setCoordsToEmbededMap(lng?: number, lat?: number) {
+    if (!lng || !lat) { lng = BernCoords[0]; lat = BernCoords[1]; }
+    const mapElem = this.detectedMapElem && this.detectedMapElem.nativeElement
+      ? this.detectedMapElem.nativeElement : document.getElementById('detectedMap');
+    mapElem.innerHTML = osmMap(lng, lat, 11, 600, 250); // lng, lat, zoom, width, height
+  }
+
+
   toggleHtml(curValue: boolean = false) {
     this.isHtmlMode = curValue;
+    if (!curValue) setTimeout(() => this.setCoordsToEmbededMap(this.userLocation && this.userLocation['longitude'], this.userLocation && this.userLocation['latitude']), 700);
   }
   // --------- geolocation ----------
   geoLocation(): void {
@@ -38,6 +54,8 @@ export class HtmlApisComponent {
         latitude: loc.coords.latitude,
         longitude: loc.coords.longitude,
       };
+      console.log(this.userLocation);
+      this.setCoordsToEmbededMap(this.userLocation.longitude, this.userLocation.latitude);
     });
   }
 

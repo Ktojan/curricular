@@ -8,5 +8,6 @@ export interface Project {
   embLink?: SafeResourceUrl,
   liveLink?: string,
   desc?: string,
+  presentation?: string,
   commercial: boolean;
 }

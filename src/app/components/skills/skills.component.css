@@ -20,7 +20,7 @@ h1 {
     background: rgba(0,0,0,0.1);
     border-radius: 0;
     box-shadow: none;
-    margin-bottom: 36px;
+    margin-bottom: 26px;
     overflow: visible;
     position: relative;
 }
@@ -31,8 +31,8 @@ h1 {
     -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
     animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
 }
-.progress-bar .progress-value{
-    width: 295px;
+.progress-bar .progress-value {
+    width: 475px;
     height: 100%;
     background: var(--main-gray-color);
     font-size: 15px;
