@@ -11,7 +11,7 @@
     "linkedinURL": "https://www.linkedin.com/in/andrey-karpovich-345701131/",
     "githubURL": "https://github.com/Ktojan/",
     "about": "I'm a Frontend Software Engineer with about 5 years of professional experience in the field of web development. Broad expertise in improving, extending, testing, and maintaining UI of modern software applications, including support of inner-library entities and common modules. Great team player, able to explain complex problems in a simplified way, with helpful examples and demos. Currently looking for on-site (in Portugal) or remote model of working.",
-    "interests": "Woodworking, guitar, singing, chess, drone-filming",
+    "interests": "Woodworking, guitar, maps + geospatial, chess, drone-filming",
     "languages": [
       { "lang": "Ukrainian", "level": "Native", "label": "🇺🇦"},
       { "lang": "Russian", "level": "Native"},
@@ -23,6 +23,21 @@
   "education": [
     {
       "years": "2024 *",
+      "subject": "Nodejs and Express Foundation with demo app",
+      "place": "Online course"
+    },
+    {
+      "years": "2024",
+      "subject": "Angular 18 new features ",
+      "place": "Self-explore + pet projects"
+    },
+    {
+      "years": "2024",
+      "subject": "Build SPA using React 18 + Next.js ",
+      "place": "Online course"
+    },
+    {
+      "years": "2024",
       "subject": "Styling apps with TailwindCSS",
       "place": "Pluralsight course (4.5 hrs)"
     },
@@ -136,7 +151,7 @@
   ],
   "skills": [
     {
-      "name": "Angular 2..17",
+      "name": "Angular 2..18 (including Signals, standalone, new syntax)",
       "value": "88"
     },      
     {
@@ -144,16 +159,20 @@
       "value": "83"
     }, 
     {
+      "name": "HTML5 (semantic), CSS3 + SCSS, DOM-api",
+      "value": "82"
+    },   
+    {
       "name": "React, Next.js, Redux",
       "value": "55"
     }, 
     {
-      "name": "HTML5, CSS3 + SCSS, DOM-api",
-      "value": "80"
-    },   
-    {
-      "name": "rxjs, Reactive programming, Signals",
+      "name": "RXJS, Reactive programming, High order Observables",
       "value": "72"
+    },    
+    {
+      "name": "Node.js, Express, SSR, server-api",
+      "value": "65"
     },    
     {
       "name": "Angular Material, fxFlex, ag-Grid",
@@ -164,11 +183,15 @@
       "value": "77"
     },
     {
-      "name": "XHR, AJAX, HTTP",
-      "value": "70"
+      "name": "Geospatial, Mapping: Mapbox-GL API, Leaflet.js + plugins",
+      "value": "77"
     },
     {
-      "name": "Libs: chart.js, pdf-viewer, Date.js",
+      "name": "HTTP, Rest API, fetch, Websocket",
+      "value": "72"
+    },
+    {
+      "name": "Libs: chart.js, pdf-viewer, ngRx, i18n",
       "value": "70"
     },
     {
@@ -180,7 +203,7 @@
       "value": "90"
     },
     {
-      "name": "Karma + Jasmine",
+      "name": "Karma + Jasmine, Browserstack for testing mobile",
       "value": "65"
     },
     {
@@ -222,6 +245,49 @@
       "media": "",
       "img": "./assets/img/vseakcii.png"
     },
+
+    {
+      "name": "Geospatial demos with Mapbox, Leaflet etc",
+      "tech": "Angular18, Mapbox GL API, Camera API, Leaflet, terra-draw",
+      "img": "./assets/img/30daymap_1.png",
+      "codeLink": "https://github.com/Ktojan/30daymapChallenge2024/tree/master",
+      "liveLink": "https://30daymap-challenge2024.vercel.app/day18",
+      "presentation": "https://drive.google.com/file/d/1zXJN0I8Tk38lK4ll6KBu7CIiRKJfK67H/view?usp=sharing",
+      "desc": "2024 nov. Angular app - a collection of demos for #30DayMapChallenge. Using: Mapbox GL API, Leaflet. Features: 3D-simulation, animation frame, drawing, youtube integration."
+    },
+    {
+      "name": "Node.js & Express with EJS templates",
+      "tech": "Node 23, Express 4, EJS templates, cookie-parser, winston",
+      "img": "./assets/img/node-express-found.png",
+      "codeLink": "https://github.com/Ktojan/node-express-found",
+      "desc": "2024 oct-nov. Simple shop app with catalog and cart with server routing, API-requests, cookie parser, server logging and error handling."
+    },
+    {
+      "name": "Mapping app with Mapbox API and features",
+      "tech": "Angular18, mapbox-gl, Angular Material, Node.js server",
+      "img": "./assets/img/mapbox_playground.png",
+      "codeLink": "https://github.com/Ktojan/MEAN-mapbox-playground",
+      "liveLink": "https://mean-mapbox-playground.vercel.app/",
+      "presentation": "https://drive.google.com/file/d/1r81Srnv0GslzlYSG2zmBMC5orbp0lwFl/view?usp=sharing",
+      "desc": "2024 oct. This is my demo Angular app based on Mapbox GL from Mapbox. Features: 3D, drawing, markers, export. Server: Express.js 4, Jade, routing, cookie-parser"
+    },
+    {
+      "name": "Angular: live exchange, chat, product list",
+      "tech": "Angular16, ngRX, websocket, chart.js, TailwindCSS",
+      "img": "./assets/img/websocket.png",
+      "codeLink": "https://github.com/Ktojan/ngrx-tailwind-websocket-demo",
+      "liveLink": "https://ngrx-tailwind-websocket-angular.vercel.app",
+      "presentation": "https://drive.google.com/file/d/1oe9q5_PP54iKSx6hBPX9NZiMzsOGE3Rw/view?usp=sharing",
+      "desc": "2024 sept. This demo front-end SPA was written on Angular 16. Consists of 3 parts: websocket + chart.js currency streamer, chat on TailwindCSS, and Products list with NGRX store"
+    },
+    {
+      "name": "Mapping app with Leaflet library",
+      "tech": "Angular 18 + Leaflet.js + GeoJson",
+      "img": "./assets/img/leaflet_1.png",
+      "codeLink": "https://github.com/Ktojan/leaflet-geojson-saudi-farming/tree/master",
+      "liveLink": "https://leaflet-geojson-saudi-farming.vercel.app/",
+      "desc": "2024 sept. Proof-of-concept demo based on Leaflet.js library and drawing plugin."
+    },
     {
       "name": "Wooden-stuff online store",
       "tech": "Angular 16, Signals + rxjs",
@@ -238,42 +304,12 @@
       "desc": "2024. It's a demo SPA-app: an auction for houses. 100% clean and optimized React.js code, organized with Next.js, based on SOLID rules and other design patterns."
     },
     {
-      "name": "Angular: live exchange, chat, product list",
-      "tech": "Angular16, ngRX, websocket, chart.js, TailwindCSS",
-      "img": "./assets/img/screen_websocket.png",
-      "codeLink": "https://github.com/Ktojan/ngrx-tailwind-websocket-demo/tree/master",
-      "liveLink": "https://ngrx-tailwind-websocket-angular.vercel.app/",
-      "desc": "2024. Consists of 3 parts: websocket + chart.js currency streamer, chat on TailwindCSS, and Products list with NGRX store and dynamic routing concepts."
-    },
-    {
-      "name": "Wooden-stuff store - React",
-      "tech": "React 18, Next.js 14, Redux, DaisyUI",
-      "img": "./assets/img/wooden-stuff-react.png",
-      "codeLink": "https://github.com/Ktojan/wooden_furniture_pet_react-redux",
-      "liveLink": "https://wooden_furniture_pet_react-redux.vercel.app/",
-      "desc": "2024. Basic store with cart and checkout of hand-made wooden pieces of furniture."
-    },
-    {
       "name": "Four in a row game",
       "tech": "JS (OOP)",
       "img": "./assets/img/for_in_row.png",
       "liveLink": "https://ktojan.github.io/four_in_row_pure_js/index.html",
       "codeLink": "https://github.com/Ktojan/four_in_row_pure_js",
       "desc": "Simple game for 2 players 'For in a row' written on pure JS with a help of teamtreehouse course"
-    },
-    {
-      "name": "Hockey game on JS",
-      "tech": "JS (OOP)",
-      "img": "./assets/img/HockeyJS.png",
-      "codeLink": "https://github.com/Ktojan/hockey_js",
-      "desc": "2D-game resolved on JS with active classes-inheritance; for displaying used HTML tag 'canvas'"
-    },
-    {
-      "name": "ZIP-codes analyzer",
-      "tech": "JS (FP)",
-      "img": "./assets/img/zipcodes.png",
-      "liveLink": "http://plnkr.co/edit/M8MpN12KMPXj9H6w6R76?p=preview",
-      "desc": "Small feature on pure JS. Was used function-constructor, XHR for external API request, JS-manipulations with DOM."
-    }
+    }  
   ]
 }
