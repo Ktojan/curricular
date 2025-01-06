@@ -43,7 +43,7 @@
       <mat-card-content>
       <img *ngIf="!project.media" mat-card-image class="hide-for-small" src="{{project.img}}" alt="{{project.name}}">
       <iframe *ngIf="project.media" class="hide-for-small" width="100%" [src]="project.embLink"
-        frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen style="height: 550px;"></iframe>
         <p>{{project.desc}}</p>
       </mat-card-content>

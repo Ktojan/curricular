@@ -37,6 +37,10 @@
     font-weight: bold;
 }
 
+::ng-deep.mat-card-header-text {
+    margin: 0 !important;
+}
+
 .mat-card-image {
     border: 1px solid black;
     margin-top: 0 !important;
