@@ -1,14 +1,14 @@
 {
   "name": "curricular",
-  "version": "2.1.00",
+  "version": "2.25.01",
   "homepage": "https://ktojan.github.io/curricular",
   "scripts": {
     "ng": "ng",
     "start": "NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --prod",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider && ng build --prod",
     "deploy": "gh-pages -d build",
     "explore": "source-map-explorer dist/**/*.js",
-    "test": "SET NODE_OPTIONS=--openssl-legacy-provider && ng test",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider && ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
