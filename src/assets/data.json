@@ -10,7 +10,7 @@
     "whatsapp": "+380980756478",
     "linkedinURL": "https://www.linkedin.com/in/andrey-karpovich-345701131/",
     "githubURL": "https://github.com/Ktojan/",
-    "about": "I'm a Frontend Software Engineer with about 5 years of professional experience in the field of web development. Broad expertise in improving, extending, testing, and maintaining UI of modern software applications, including support of inner-library entities and common modules. Great team player, able to explain complex problems in a simplified way, with helpful examples and demos. Currently looking for on-site (in Portugal) or remote model of working.",
+    "about": "I'm a Frontend Software Engineer with about 5 years of professional experience in the field of web development. Broad expertise in improving, extending, testing, and maintaining UI of modern software applications, including support of inner-library entities and common modules, excited with maps and GIS features. Great team player, able to explain complex problems in a simplified way, with helpful examples and demos. Currently looking for remote model of working.",
     "interests": "Woodworking, guitar, maps + geospatial, chess, drone-filming",
     "languages": [
       { "lang": "Ukrainian", "level": "Native", "label": "🇺🇦"},
@@ -22,9 +22,19 @@
 
   "education": [
     {
-      "years": "2024 *",
+      "years": "2024-25",
+      "subject": "GraphQL API with Apollo Client 3 and React with demo",
+      "place": "Pluralsight"
+    },
+    {
+      "years": "2024",
       "subject": "Nodejs and Express Foundation with demo app",
       "place": "Online course"
+    },
+    {
+      "years": "2024",
+      "subject": "GIS and Geospatial tools in modern web-development",
+      "place": "Interactive bootcamp"
     },
     {
       "years": "2024",
@@ -37,7 +47,7 @@
       "place": "Online course"
     },
     {
-      "years": "2024",
+      "years": "2024 *",
       "subject": "Styling apps with TailwindCSS",
       "place": "Pluralsight course (4.5 hrs)"
     },
@@ -151,24 +161,28 @@
   ],
   "skills": [
     {
-      "name": "Angular 2..18 (including Signals, standalone, new syntax)",
-      "value": "88"
+      "name": "ANGULAR 2..18 (including Signals, standalone)",
+      "value": "89"
     },      
     {
+      "name": "REACT, Next.js, Redux",
+      "value": "71"
+    },
+    {
       "name": "Javascript, Typescript",
-      "value": "83"
+      "value": "84"
     }, 
     {
       "name": "HTML5 (semantic), CSS3 + SCSS, DOM-api",
       "value": "82"
-    },   
-    {
-      "name": "React, Next.js, Redux",
-      "value": "55"
-    }, 
+    },  
     {
       "name": "RXJS, Reactive programming, High order Observables",
       "value": "72"
+    },
+    {
+      "name": "Rest API, Apollo + GraphQL (client side)",
+      "value": "75"
     },    
     {
       "name": "Node.js, Express, SSR, server-api",
@@ -183,11 +197,11 @@
       "value": "77"
     },
     {
-      "name": "Geospatial, Mapping: Mapbox-GL API, Leaflet.js + plugins",
-      "value": "77"
+      "name": "GIS, Mapping: Mapbox-GL API, Leaflet.js + plugins",
+      "value": "79"
     },
     {
-      "name": "HTTP, Rest API, fetch, Websocket",
+      "name": "HTTP, Axios, fetch, Websocket",
       "value": "72"
     },
     {
@@ -246,6 +260,21 @@
       "img": "./assets/img/vseakcii.png"
     },
 
+    {
+      "name": "Apollo-GraphQl+React fullstack demo",
+      "tech": "React, apollo/client + apollo-server, apollo-datasource, graphql 15",
+      "img": "./assets/img/graph_1.png",
+      "codeLink": "https://github.com/Ktojan/react-apollo-graghql-sessions",
+      "desc": "2025 jan. Fullstack (Apollo + React) demo. Data is stored using the Apollo-server, queries and mutation with GraphQL, and frontend is implemented on React (bootstrap based layouts)"
+    },
+    {
+      "name": "Interactive maps: geofencing + drawing + motion.",
+      "tech": "React18, MaterialUI, Mapbox GL API, turf",
+      "img": "./assets/img/geofencing.png",
+      "codeLink": "https://github.com/Ktojan/geofencing-react-playground/tree/animations-mapbox",
+      "presentation": "https://drive.google.com/file/d/1wCwFKt4NgK09kssffAN4c22phkVU5Pji/view?usp=sharing",
+      "desc": "2024 dec. React demo as a proof-of-concept of geofencing mobile objects validation, based on Mapbox api + turf."
+    },
     {
       "name": "Geospatial demos with Mapbox, Leaflet etc",
       "tech": "Angular18, Mapbox GL API, Camera API, Leaflet, terra-draw",
